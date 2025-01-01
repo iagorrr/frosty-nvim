@@ -1,9 +1,9 @@
 require "options"
 
 local plugins = require "loader" {
-    "aerial",
+    -- "aerial",
     "autopairs",
-    "bufferline",
+    -- "bufferline",
     "cmp",
     "colorizer",
     "colorscheme",
@@ -13,7 +13,7 @@ local plugins = require "loader" {
     "direnv",
     "dressing",
     "dropbar",
-    "feline",
+    -- "feline",
     "gitsigns",
     "guess-indent",
     "image",
