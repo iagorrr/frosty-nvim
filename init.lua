@@ -28,6 +28,7 @@ local plugins = require "loader" {
     "treesitter",
     "web-devicons",
     "which-key",
+    "noctishc",
 }
 
 require("lazy").setup(plugins, {

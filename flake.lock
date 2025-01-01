@@ -322,6 +322,22 @@
         "type": "github"
       }
     },
+    "iagorrr/noctis-high-contrast.nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1735508645,
+        "narHash": "sha256-FNWdx3dIMdcuucEo0dx8y2aQK6YMjM4E+vj5qmk/mDM=",
+        "owner": "iagorrr",
+        "repo": "noctis-high-contrast.nvim",
+        "rev": "f7c24adb2cd0eca9cf5e9d0fa6595512f82cf450",
+        "type": "github"
+      },
+      "original": {
+        "owner": "iagorrr",
+        "repo": "noctis-high-contrast.nvim",
+        "type": "github"
+      }
+    },
     "kylechui/nvim-surround": {
       "flake": false,
       "locked": {
@@ -568,6 +584,7 @@
         "hrsh7th/cmp-nvim-lsp": "hrsh7th/cmp-nvim-lsp",
         "hrsh7th/cmp-path": "hrsh7th/cmp-path",
         "hrsh7th/nvim-cmp": "hrsh7th/nvim-cmp",
+        "iagorrr/noctis-high-contrast.nvim": "iagorrr/noctis-high-contrast.nvim",
         "kylechui/nvim-surround": "kylechui/nvim-surround",
         "lewis6991/gitsigns.nvim": "lewis6991/gitsigns.nvim",
         "lukas-reineke/indent-blankline.nvim": "lukas-reineke/indent-blankline.nvim",
