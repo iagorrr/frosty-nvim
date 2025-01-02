@@ -204,6 +204,11 @@
       url = "github:windwp/nvim-autopairs";
       flake = false;
     };
+
+    "akinsho/toggleterm.nvim" = {
+      url = "github:akinsho/toggleterm.nvim";
+      flake = false;
+    };
   };
 
   outputs = {

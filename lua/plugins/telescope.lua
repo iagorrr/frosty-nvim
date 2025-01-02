@@ -39,7 +39,7 @@ return {
 
     mappings = {
         n = {
-            ["<leader>t"] = {
+            ["<leader>f"] = {
                 name = "Telescope",
 
                 f = { "<cmd>Telescope find_files<cr>", "Find files" },

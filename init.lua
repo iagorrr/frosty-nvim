@@ -29,6 +29,7 @@ local plugins = require "loader" {
     "web-devicons",
     "which-key",
     "noctishc",
+    "toggleterm",
 }
 
 require("lazy").setup(plugins, {

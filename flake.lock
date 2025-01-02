@@ -128,6 +128,22 @@
         "type": "github"
       }
     },
+    "akinsho/toggleterm.nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1735582456,
+        "narHash": "sha256-4Y1TXxnrMLqwFlmbj39JTlcUToP80kWU+FpPUrYdz8s=",
+        "owner": "akinsho",
+        "repo": "toggleterm.nvim",
+        "rev": "e76134e682c1a866e3dfcdaeb691eb7b01068668",
+        "type": "github"
+      },
+      "original": {
+        "owner": "akinsho",
+        "repo": "toggleterm.nvim",
+        "type": "github"
+      }
+    },
     "andrewferrier/debugprint.nvim": {
       "flake": false,
       "locked": {
@@ -572,6 +588,7 @@
         "NeogitOrg/neogit": "NeogitOrg/neogit",
         "NvChad/nvim-colorizer.lua": "NvChad/nvim-colorizer.lua",
         "akinsho/bufferline.nvim": "akinsho/bufferline.nvim",
+        "akinsho/toggleterm.nvim": "akinsho/toggleterm.nvim",
         "andrewferrier/debugprint.nvim": "andrewferrier/debugprint.nvim",
         "catppuccin/nvim": "catppuccin/nvim",
         "direnv/direnv.vim": "direnv/direnv.vim",
