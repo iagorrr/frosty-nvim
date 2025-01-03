@@ -1,7 +1,7 @@
 require "options"
 
 local plugins = require "loader" {
-    -- "aerial",
+    "aerial",
     "autopairs",
     -- "bufferline",
     "cmp",
@@ -30,6 +30,7 @@ local plugins = require "loader" {
     "which-key",
     "noctishc",
     "toggleterm",
+    "zen-mode",
 }
 
 require("lazy").setup(plugins, {

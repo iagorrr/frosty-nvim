@@ -15,7 +15,6 @@ opt.signcolumn = "yes:1"
 opt.fillchars = { eob = " " }
 
 opt.ruler = false
-opt.laststatus = 0
 opt.showmode = false
 
 opt.scrolloff = 4
@@ -46,10 +45,8 @@ opt.smartcase = true
 vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]])
 
 -- TODO: Make this string dynamic so when the buffer width changes it wont break...
-vim.opt.laststatus = 0
+opt.laststatus = 0
 vim.api.nvim_set_hl(0, "Statusline", { link = "FloatBorder" })
 vim.api.nvim_set_hl(0, "StatuslineNC", { link = "FloatBorder" })
-
 local str = string.rep("─", vim.api.nvim_win_get_width(0))
-
 vim.opt.statusline = "%#FloatBorder#" .. str .. "%*"

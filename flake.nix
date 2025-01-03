@@ -209,6 +209,11 @@
       url = "github:akinsho/toggleterm.nvim";
       flake = false;
     };
+
+    "folke/zen-mode.nvim" = {
+      url = "github:folke/zen-mode.nvim";
+      flake = false;
+    };
   };
 
   outputs = {
