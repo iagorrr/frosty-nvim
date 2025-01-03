@@ -37,7 +37,10 @@ opt.showmode = false
 opt.ruler = false
 opt.showcmd = false
 opt.shortmess = "F"
-opt.hidden = false
+
+-- Let hidden buffers keep running, particularly useful for toggle-term
+-- don't reset the process
+opt.hidden = true
 
 opt.ignorecase = true
 opt.smartcase = true

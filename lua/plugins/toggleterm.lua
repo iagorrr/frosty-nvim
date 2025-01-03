@@ -14,8 +14,8 @@ local function config()
         shading_ratio = -3, -- the ratio of shading factor for light/dark terminal background, default: -3
         insert_mappings = true, -- whether or not the open mapping applies in insert mode
         terminal_mappings = true, -- whether or not the open mapping applies in the opened terminals
-        persist_size = true,
-        persist_mode = true, -- if set to true (default) the previous terminal mode will be remembered
+        persist_size = false,
+        persist_mode = false, -- if set to true (default) the previous terminal mode will be remembered
         close_on_exit = false, -- close the terminal window when the process exits
         clear_env = false, -- use only environmental variables from `env`, passed to jobstart()
         -- Change the default shell. Can be a string or a function returning a string
