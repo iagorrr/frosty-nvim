@@ -2,7 +2,7 @@ local opt = vim.opt
 
 opt.termguicolors = true
 
-opt.lazyredraw = true
+opt.lazyredraw = false
 
 opt.timeoutlen = 500
 

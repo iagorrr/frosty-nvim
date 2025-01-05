@@ -214,6 +214,11 @@
       url = "github:folke/zen-mode.nvim";
       flake = false;
     };
+
+    "folke/noice.nvim" = {
+      url = "github:folke/noice.nvim";
+      flake = false;
+    };
   };
 
   outputs = {

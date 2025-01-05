@@ -226,6 +226,22 @@
         "type": "github"
       }
     },
+    "folke/noice.nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1734026622,
+        "narHash": "sha256-OpwgNTGunmy6Y7D/k0T+DFK/WJ8MeVTGWwjiPTQlvEY=",
+        "owner": "folke",
+        "repo": "noice.nvim",
+        "rev": "eaed6cc9c06aa2013b5255349e4f26a6b17ab70f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "folke",
+        "repo": "noice.nvim",
+        "type": "github"
+      }
+    },
     "folke/which-key.nvim": {
       "flake": false,
       "locked": {
@@ -610,6 +626,7 @@
         "direnv/direnv.vim": "direnv/direnv.vim",
         "flake-utils": "flake-utils",
         "folke/lazy.nvim": "folke/lazy.nvim",
+        "folke/noice.nvim": "folke/noice.nvim",
         "folke/which-key.nvim": "folke/which-key.nvim",
         "folke/zen-mode.nvim": "folke/zen-mode.nvim",
         "freddiehaddad/feline.nvim": "freddiehaddad/feline.nvim",

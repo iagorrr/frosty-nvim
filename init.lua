@@ -15,7 +15,7 @@ local plugins = require "loader" {
     "dropbar",
     -- "feline",
     "gitsigns",
-    "guess-indent",
+    -- "guess-indent",
     "image",
     "indent-blankline",
     "lspconfig",
@@ -31,6 +31,7 @@ local plugins = require "loader" {
     "noctishc",
     "toggleterm",
     "zen-mode",
+    "noice", -- Better UI plugin
 }
 
 require("lazy").setup(plugins, {
