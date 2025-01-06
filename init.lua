@@ -8,7 +8,7 @@ local plugins = require "loader" {
     "colorizer",
     "colorscheme",
     "conform",
-    "dashboard",
+    -- "dashboard",
     "debugprint",
     "direnv",
     "dressing",
