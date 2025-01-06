@@ -9,6 +9,7 @@ local function config()
             TRACE = "󰏫",
             WARN = "",
         },
+        top_down = false,
     }
 
     vim.notify = notify
