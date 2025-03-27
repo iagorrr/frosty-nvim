@@ -54,12 +54,7 @@
       url = "github:Bekaboo/dropbar.nvim";
       flake = false;
     };
-
-    "freddiehaddad/feline.nvim" = {
-      url = "github:freddiehaddad/feline.nvim";
-      flake = false;
-    };
-
+  
     "rcarriga/nvim-notify" = {
       url = "github:rcarriga/nvim-notify";
       flake = false;
@@ -261,6 +256,7 @@
 
         lua-language-server
         stylua
+        luarocks
 
         nil
         alejandra

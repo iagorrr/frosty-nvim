@@ -274,22 +274,6 @@
         "type": "github"
       }
     },
-    "freddiehaddad/feline.nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1731467236,
-        "narHash": "sha256-/TqgHJo2ej/V5bubTdTlf5S+EZmSpU5F2Mdi0SHCD30=",
-        "owner": "freddiehaddad",
-        "repo": "feline.nvim",
-        "rev": "9f1313f61a75ec5ebe805fedd46bdc130c420963",
-        "type": "github"
-      },
-      "original": {
-        "owner": "freddiehaddad",
-        "repo": "feline.nvim",
-        "type": "github"
-      }
-    },
     "hrsh7th/cmp-buffer": {
       "flake": false,
       "locked": {
@@ -629,7 +613,6 @@
         "folke/noice.nvim": "folke/noice.nvim",
         "folke/which-key.nvim": "folke/which-key.nvim",
         "folke/zen-mode.nvim": "folke/zen-mode.nvim",
-        "freddiehaddad/feline.nvim": "freddiehaddad/feline.nvim",
         "hrsh7th/cmp-buffer": "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-cmdline": "hrsh7th/cmp-cmdline",
         "hrsh7th/cmp-nvim-lsp": "hrsh7th/cmp-nvim-lsp",

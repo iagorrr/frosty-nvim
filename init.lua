@@ -13,7 +13,6 @@ local plugins = require "loader" {
     "direnv",
     "dressing",
     "dropbar",
-    -- "feline",
     "gitsigns",
     -- "guess-indent",
     "image",
