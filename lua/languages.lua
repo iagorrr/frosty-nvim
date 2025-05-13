@@ -4,7 +4,9 @@ languages.servers = {
     bashls = {},
 
     cssls = {},
+
     html = {},
+
     jsonls = {},
 
     lua_ls = {
@@ -28,6 +30,10 @@ languages.servers = {
     rust_analyzer = {},
 
     clangd = {},
+
+    gopls = {
+        filetypes = { "go", "gomod", "gowork", "totmpl" },
+    },
 }
 
 languages.formatters = {

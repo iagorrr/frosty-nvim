@@ -1,3 +1,8 @@
+--[[
+-- Setup sp for each language based
+-- on the definitions at languages.lua
+--]]
+
 local function config()
     local servers = require("languages").servers
 
@@ -11,6 +16,7 @@ local function config()
             capabilities = capabilities,
             settings = settings,
 
+            --- TODO: do this per language ?
             root_dir = function()
                 return vim.fn.getcwd()
             end,

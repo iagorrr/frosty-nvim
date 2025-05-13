@@ -5,6 +5,14 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
 
+    # Language Specific
+
+    # Go
+    "ray-x/go.nvim" = {
+      url = "github:folke/lazy.nvim";
+      flake = false;
+    };
+
     "folke/lazy.nvim" = {
       url = "github:folke/lazy.nvim";
       flake = false;
@@ -54,7 +62,7 @@
       url = "github:Bekaboo/dropbar.nvim";
       flake = false;
     };
-  
+
     "rcarriga/nvim-notify" = {
       url = "github:rcarriga/nvim-notify";
       flake = false;
@@ -268,6 +276,9 @@
         rustfmt
 
         clang-tools
+
+        # Go support
+        gopls
       ];
 
       luaDeps = ps:

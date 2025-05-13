@@ -578,6 +578,22 @@
         "type": "github"
       }
     },
+    "ray-x/go.nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1740511197,
+        "narHash": "sha256-nQ8PR9DTdzg6Z2rViuVD6Pswc2VvDQwS3uMNgyDh5ls=",
+        "owner": "folke",
+        "repo": "lazy.nvim",
+        "rev": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "folke",
+        "repo": "lazy.nvim",
+        "type": "github"
+      }
+    },
     "rcarriga/nvim-notify": {
       "flake": false,
       "locked": {
@@ -632,6 +648,7 @@
         "nvim-treesitter/nvim-treesitter": "nvim-treesitter/nvim-treesitter",
         "nvimdev/dashboard-nvim": "nvimdev/dashboard-nvim",
         "rafamadriz/friendly-snippets": "rafamadriz/friendly-snippets",
+        "ray-x/go.nvim": "ray-x/go.nvim",
         "rcarriga/nvim-notify": "rcarriga/nvim-notify",
         "saadparwaiz1/cmp_luasnip": "saadparwaiz1/cmp_luasnip",
         "sindrets/diffview.nvim": "sindrets/diffview.nvim",
