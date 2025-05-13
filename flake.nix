@@ -9,7 +9,12 @@
 
     # Go
     "ray-x/go.nvim" = {
-      url = "github:folke/lazy.nvim";
+      url = "github:ray-x/go.nvim";
+      flake = false;
+    };
+
+    "olexsmir/gopher.nvim" = {
+      url = "github:olexsmir/gopher.nvim";
       flake = false;
     };
 
@@ -279,6 +284,7 @@
 
         # Go support
         gopls
+        go
       ];
 
       luaDeps = ps:

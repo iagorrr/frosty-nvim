@@ -3,6 +3,7 @@ local function config()
 
     local opts = {
         defaults = {
+            layout_strategy = "vertical",
             sorting_strategy = "ascending",
             prompt_prefix = "   ",
             selection_caret = " ",
@@ -11,6 +12,11 @@ local function config()
             layout_config = {
                 horizontal = {
                     prompt_position = "top",
+                },
+
+                vertical = {
+                    prompt_position = "top",
+                    mirror = true,
                 },
             },
 

@@ -32,7 +32,17 @@ languages.servers = {
     clangd = {},
 
     gopls = {
-        filetypes = { "go", "gomod", "gowork", "totmpl" },
+        cmd = { "gopls" },
+        filetypes = { "go", "gomod", "gowork", "gotmpl" },
+        settings = {
+            gopls = {
+                completeUnimported = true,
+                usePlaceholders = true,
+                analyses = {
+                    unusedparams = true,
+                },
+            },
+        },
     },
 }
 
@@ -52,6 +62,8 @@ languages.formatters = {
     lua = { "stylua" },
 
     nix = { "alejandra" },
+
+    go = { "gofmt" },
 }
 
 return languages

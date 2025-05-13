@@ -562,6 +562,22 @@
         "type": "github"
       }
     },
+    "olexsmir/gopher.nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1743688358,
+        "narHash": "sha256-gxiD5y+uhGSTxE4td3Zhlns4wvJAbMdRSmB2/BZnQaA=",
+        "owner": "olexsmir",
+        "repo": "gopher.nvim",
+        "rev": "9db5931af1293ae52500921d92c02145d86df02c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "olexsmir",
+        "repo": "gopher.nvim",
+        "type": "github"
+      }
+    },
     "rafamadriz/friendly-snippets": {
       "flake": false,
       "locked": {
@@ -581,16 +597,16 @@
     "ray-x/go.nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1740511197,
-        "narHash": "sha256-nQ8PR9DTdzg6Z2rViuVD6Pswc2VvDQwS3uMNgyDh5ls=",
-        "owner": "folke",
-        "repo": "lazy.nvim",
-        "rev": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a",
+        "lastModified": 1746088387,
+        "narHash": "sha256-J+ZA7/uSOEVi6k1UJ6ft6oV8ftyHRqChf5u2aLEdY+Y=",
+        "owner": "ray-x",
+        "repo": "go.nvim",
+        "rev": "37ec4d9be3edef64b725bfe29684e1fe019873bc",
         "type": "github"
       },
       "original": {
-        "owner": "folke",
-        "repo": "lazy.nvim",
+        "owner": "ray-x",
+        "repo": "go.nvim",
         "type": "github"
       }
     },
@@ -647,6 +663,7 @@
         "nvim-tree/nvim-web-devicons": "nvim-tree/nvim-web-devicons",
         "nvim-treesitter/nvim-treesitter": "nvim-treesitter/nvim-treesitter",
         "nvimdev/dashboard-nvim": "nvimdev/dashboard-nvim",
+        "olexsmir/gopher.nvim": "olexsmir/gopher.nvim",
         "rafamadriz/friendly-snippets": "rafamadriz/friendly-snippets",
         "ray-x/go.nvim": "ray-x/go.nvim",
         "rcarriga/nvim-notify": "rcarriga/nvim-notify",

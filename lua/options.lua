@@ -22,8 +22,8 @@ opt.scrolloff = 4
 opt.splitbelow = true
 opt.splitright = true
 
-opt.number = false
-opt.relativenumber = false
+opt.number = true
+opt.relativenumber = true
 
 opt.expandtab = true
 opt.smartindent = true

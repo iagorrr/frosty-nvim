@@ -12,19 +12,17 @@ local function config()
     vim.lsp.inlay_hint.enable()
 
     for server, settings in pairs(servers) do
-        lspconfig[server].setup {
-            capabilities = capabilities,
-            settings = settings,
+        settings.on_attach = function(client)
+            client.server_capabilities.semanticTokensProvider = nil
+        end
 
-            --- TODO: do this per language ?
-            root_dir = function()
-                return vim.fn.getcwd()
-            end,
+        settings.capabilities = capabilities
 
-            on_attach = function(client)
-                client.server_capabilities.semanticTokensProvider = nil
-            end,
-        }
+        settings.root_dir = function()
+            return vim.fn.getcwd()
+        end
+
+        lspconfig[server].setup(settings)
     end
 
     local diagnostic_signs = {
