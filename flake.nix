@@ -267,6 +267,8 @@
         vscode-langservers-extracted
         prettierd
 
+        # Lua support
+        lua
         lua-language-server
         stylua
         luarocks
