@@ -70,16 +70,12 @@ return {
 
     mappings = {
         n = {
-            ["<leader>n"] = {
+            ["<leader>e"] = {
                 name = "Neotree",
-
-                s = { "<cmd>Neotree show<cr>", "Show" },
-                c = { "<cmd>Neotree close<cr>", "Close" },
-                t = { "<cmd>Neotree toggle<cr>", "Toggle" },
-
-                f = { "<cmd>Neotree filesystem<cr>", "Files" },
-                b = { "<cmd>Neotree buffers<cr>", "Buffers" },
-                g = { "<cmd>Neotree git_status<cr>", "Git" },
+                e = { "<cmd>Neotree toggle<cr>", "Toggle" },
+                f = { "<cmd>Neotree filesystem toggle<cr>", "Files" },
+                b = { "<cmd>Neotree buffers toggle<cr>", "Buffers" },
+                g = { "<cmd>Neotree git_status toggle<cr>", "Git" },
             },
         },
     },
