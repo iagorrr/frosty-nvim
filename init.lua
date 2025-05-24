@@ -15,7 +15,6 @@ local plugins = require "loader" {
     "dropbar",
     "gitsigns",
     -- "guess-indent",
-    "image",
     "indent-blankline",
     "lspconfig",
     "luasnip",
