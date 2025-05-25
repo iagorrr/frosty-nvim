@@ -1,10 +1,6 @@
 FROSTY_PACKAGES = FROSTY_PACKAGES or {}
 
-FROSTY_CONFIG = {
-    mappings = require "mappings",
-    colorscheme_integrations = {},
-    highlights = require "highlights",
-}
+FROSTY_CONFIG = { mappings = require "mappings", colorscheme_integrations = {}, highlights = require "highlights" }
 
 local lazy_path = FROSTY_PACKAGES["folke/lazy.nvim"]
 

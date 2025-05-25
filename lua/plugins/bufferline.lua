@@ -1,7 +1,7 @@
 local function config()
     local opts = {
         options = {
-            highlights = require("catppuccin.groups.integrations.bufferline").get(),
+            highlights = require("nord").bufferline.highlights {},
 
             separator_style = { " ", " " },
 

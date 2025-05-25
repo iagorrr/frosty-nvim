@@ -23,7 +23,10 @@
       flake = false;
     };
 
-    # Colorschemes
+    #######################
+    # BEGIN: Colorschemes #
+    #######################
+
     "catppuccin/nvim" = {
       url = "github:catppuccin/nvim";
       flake = false;
@@ -33,6 +36,15 @@
       url = "github:rebelot/kanagawa.nvim";
       flake = false;
     };
+
+    "shaunsingh/nord.nvim" = {
+      url = "github:shaunsingh/nord.nvim";
+      flake = false;
+    };
+
+    #####################
+    # END: Colorschemes #
+    #####################
 
     "nvimdev/dashboard-nvim" = {
       url = "github:nvimdev/dashboard-nvim";

@@ -30,8 +30,9 @@ local plugins = require "loader" {
     "noice", -- Better UI plugin
 
     -- Colorschemes setup
-    "kanagawa",
-    "colorscheme",
+    --    "kanagawa",
+    --    "colorscheme",
+    "nord",
 }
 
 require("lazy").setup(plugins, {
