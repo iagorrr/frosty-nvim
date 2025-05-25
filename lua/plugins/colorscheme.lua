@@ -39,7 +39,6 @@ local function config()
             all = FROSTY_CONFIG.highlights,
         },
     }
-
     require("catppuccin").setup(opts)
     vim.cmd.colorscheme "catppuccin"
 end

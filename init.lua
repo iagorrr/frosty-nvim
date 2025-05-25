@@ -6,7 +6,6 @@ local plugins = require "loader" {
     "bufferline",
     "cmp",
     "colorizer",
-    "colorscheme",
     "conform",
     "dashboard",
     "debugprint",
@@ -29,6 +28,10 @@ local plugins = require "loader" {
     "toggleterm",
     "zen-mode",
     "noice", -- Better UI plugin
+
+    -- Colorschemes setup
+    "kanagawa",
+    "colorscheme",
 }
 
 require("lazy").setup(plugins, {

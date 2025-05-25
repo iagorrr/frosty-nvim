@@ -23,8 +23,14 @@
       flake = false;
     };
 
+    # Colorschemes
     "catppuccin/nvim" = {
       url = "github:catppuccin/nvim";
+      flake = false;
+    };
+
+    "rebelot/kanagawa.nvim" = {
+      url = "github:rebelot/kanagawa.nvim";
       flake = false;
     };
 
