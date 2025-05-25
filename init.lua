@@ -26,7 +26,6 @@ local plugins = require "loader" {
     "treesitter",
     "web-devicons",
     "which-key",
-    "noctishc",
     "toggleterm",
     "zen-mode",
     "noice", -- Better UI plugin
