@@ -8,6 +8,7 @@ local function config()
             prompt_prefix = "   ",
             selection_caret = " ",
             entry_prefix = " ",
+            borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
 
             layout_config = {
                 horizontal = {
