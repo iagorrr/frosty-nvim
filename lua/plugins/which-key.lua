@@ -1,6 +1,17 @@
 local function config()
     local which_key = require "which-key"
 
+    local opts = {
+        win = {
+            border = "single", -- single | double
+        },
+        layout = {
+            align = "center",
+        },
+    }
+
+    which_key.setup(opts)
+
     vim.g.mapleader = " "
 
     for mode, mappings in pairs(FROSTY_CONFIG.mappings) do
@@ -15,6 +26,6 @@ return {
     },
 
     colorscheme_integrations = {
-        which_key = true,
+        -- which_key = true,
     },
 }

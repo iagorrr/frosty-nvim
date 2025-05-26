@@ -31,7 +31,6 @@ return {
         dependencies = {
             "nvim-tree/nvim-web-devicons",
             "tiagovla/scope.nvim",
-            "catppuccin/nvim",
         },
         config = config,
     },

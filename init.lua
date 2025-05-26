@@ -5,7 +5,6 @@ local plugins = require "loader" {
     "autopairs",
     "bufferline",
     "cmp",
-    "colorizer",
     "conform",
     "dashboard",
     "debugprint",
@@ -13,13 +12,10 @@ local plugins = require "loader" {
     "dressing",
     "dropbar",
     "gitsigns",
-    -- "guess-indent",
     "indent-blankline",
     "lspconfig",
     "luasnip",
     "neo-tree",
-    "neogit",
-    -- "notify",
     "surround",
     "telescope",
     "treesitter",
@@ -27,11 +23,7 @@ local plugins = require "loader" {
     "which-key",
     "toggleterm",
     "zen-mode",
-    "noice", -- Better UI plugin
-
-    -- Colorschemes setup
-    --    "kanagawa",
-    --    "colorscheme",
+    "noice",
     "nord",
 }
 

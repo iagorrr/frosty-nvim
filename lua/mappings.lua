@@ -1,3 +1,4 @@
+-- predefined maps unrealted to plugins
 local mappings = {}
 
 mappings.n = {

@@ -163,11 +163,11 @@
     "catppuccin/nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1735299190,
-        "narHash": "sha256-lwQLmqm01FihJdad4QRMK23MTrouyOokyuX/3enWjzs=",
+        "lastModified": 1748086793,
+        "narHash": "sha256-3BUq4/3WrBbVw37ez16ZajTYWiNUQ6SiV9APHt4uvUU=",
         "owner": "catppuccin",
         "repo": "nvim",
-        "rev": "f67b886d65a029f12ffa298701fb8f1efd89295d",
+        "rev": "be1e5e6308bb9d016bf5c1565e0f1d5e46400d7a",
         "type": "github"
       },
       "original": {
