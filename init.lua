@@ -10,7 +10,7 @@ local plugins = require "loader" {
     "debugprint",
     "direnv",
     "dressing",
-    "dropbar",
+    -- "dropbar",
     "gitsigns",
     "indent-blankline",
     "lspconfig",
