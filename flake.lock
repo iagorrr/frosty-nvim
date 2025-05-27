@@ -402,6 +402,22 @@
         "type": "github"
       }
     },
+    "mrcjkb/haskell-tools.nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1748288333,
+        "narHash": "sha256-xHaKRgnfjP7ntXST+b9x5v/hHBGOfBJPy2Xxdpen8TE=",
+        "owner": "mrcjkb",
+        "repo": "haskell-tools.nvim",
+        "rev": "7ec43968cd30ba52b1ade311acffaecddb718259",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mrcjkb",
+        "repo": "haskell-tools.nvim",
+        "type": "github"
+      }
+    },
     "neovim/nvim-lspconfig": {
       "flake": false,
       "locked": {
@@ -653,6 +669,7 @@
         "kylechui/nvim-surround": "kylechui/nvim-surround",
         "lewis6991/gitsigns.nvim": "lewis6991/gitsigns.nvim",
         "lukas-reineke/indent-blankline.nvim": "lukas-reineke/indent-blankline.nvim",
+        "mrcjkb/haskell-tools.nvim": "mrcjkb/haskell-tools.nvim",
         "neovim/nvim-lspconfig": "neovim/nvim-lspconfig",
         "nixpkgs": "nixpkgs",
         "nvim-lua/plenary.nvim": "nvim-lua/plenary.nvim",

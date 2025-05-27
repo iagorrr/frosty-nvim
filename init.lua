@@ -25,6 +25,7 @@ local plugins = require "loader" {
     "zen-mode",
     "noice",
     "nord",
+    "haskell-tools",
 }
 
 require("lazy").setup(plugins, {

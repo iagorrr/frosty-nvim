@@ -27,10 +27,26 @@ local function config()
             -- not natively supported but implemented in this plugin.
             border = "single", -- 'single' | 'double' | 'shadow' | 'curved' | ... other options supported by win open
             -- like `size`, width, height, row, and col can be a number or function which is passed the current terminal
-            -- width = 80,
-            -- height = 40,
-            -- row = 40,
-            -- col = 40,
+
+            -- TODO: not working !
+            width = function(term)
+                -- Example: 80% of editor width, but then subtract a bit for "padding"
+                return math.floor(vim.o.columns * 0.8) - 2 -- Adjust '4' for more/less horizontal padding
+            end,
+
+            height = function(term)
+                -- Example: 80% of editor height, but then subtract a bit for "padding"
+                return math.floor(vim.o.lines * 0.8) - 2 -- Adjust '2' for more/less vertical padding
+            end,
+
+            -- row = function(term)
+            --     return math.floor((vim.o.lines - term.height) / 2)
+            -- end,
+            --
+            -- col = function(term)
+            --     return math.floor((vim.o.columns - term.width) / 2)
+            -- end,
+
             winblend = 0,
             -- zindex = <value>,
             -- title_pos = "center", -- left' | 'center' | 'right', position of the title of the floating window

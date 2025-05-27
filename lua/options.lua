@@ -49,7 +49,7 @@ vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]])
 
 -- TODO: Make this string dynamic so when the buffer width changes it wont break...
 opt.laststatus = 0
-vim.api.nvim_set_hl(0, "Statusline", { link = "FloatBorder" })
-vim.api.nvim_set_hl(0, "StatuslineNC", { link = "FloatBorder" })
+-- vim.api.nvim_set_hl(0, "Statusline", { link = "FloatBorder" })
+-- vim.api.nvim_set_hl(0, "StatuslineNC", { link = "FloatBorder" })
 local str = string.rep("─", vim.api.nvim_win_get_width(0))
-vim.opt.statusline = "%#FloatBorder#" .. str .. "%*"
+-- vim.opt.statusline = "%#FloatBorder#" .. str .. "%*"

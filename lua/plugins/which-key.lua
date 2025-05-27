@@ -2,9 +2,12 @@ local function config()
     local which_key = require "which-key"
 
     local opts = {
+        preset = "modern", -- classic | modern | helix
+
         win = {
             border = "single", -- single | double
         },
+
         layout = {
             align = "center",
         },
@@ -23,9 +26,5 @@ return {
     {
         "folke/which-key.nvim",
         config = config,
-    },
-
-    colorscheme_integrations = {
-        -- which_key = true,
     },
 }

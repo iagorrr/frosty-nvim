@@ -18,6 +18,12 @@
       flake = false;
     };
 
+    # Haskell
+    "mrcjkb/haskell-tools.nvim" = {
+      url = "github:mrcjkb/haskell-tools.nvim";
+      flake = false;
+    };
+
     "folke/lazy.nvim" = {
       url = "github:folke/lazy.nvim";
       flake = false;
@@ -300,6 +306,11 @@
         # Go support
         gopls
         go
+
+        # Haskell support
+        ghc
+        haskell-language-server
+        haskellPackages.hoogle
       ];
 
       luaDeps = ps:
