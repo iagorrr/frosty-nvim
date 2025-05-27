@@ -19,11 +19,11 @@
     "Bekaboo/dropbar.nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1736195859,
-        "narHash": "sha256-ipWDstnm5p5S2On0wv9it6BARXuagaWXAm5b8RAX/pc=",
+        "lastModified": 1748064206,
+        "narHash": "sha256-P1bRZJ+NmsfjNfNQbc0bbYVMbJJJwqEUM3/evqSP8IA=",
         "owner": "Bekaboo",
         "repo": "dropbar.nvim",
-        "rev": "d0c78c570db0f5941f85ba54522c0f01427cdf67",
+        "rev": "f7ecb0c3600ca1dc467c361e9af40f97289d7aad",
         "type": "github"
       },
       "original": {
@@ -157,22 +157,6 @@
       "original": {
         "owner": "andrewferrier",
         "repo": "debugprint.nvim",
-        "type": "github"
-      }
-    },
-    "catppuccin/nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1748086793,
-        "narHash": "sha256-3BUq4/3WrBbVw37ez16ZajTYWiNUQ6SiV9APHt4uvUU=",
-        "owner": "catppuccin",
-        "repo": "nvim",
-        "rev": "be1e5e6308bb9d016bf5c1565e0f1d5e46400d7a",
-        "type": "github"
-      },
-      "original": {
-        "owner": "catppuccin",
-        "repo": "nvim",
         "type": "github"
       }
     },
@@ -594,22 +578,6 @@
         "type": "github"
       }
     },
-    "rcarriga/nvim-notify": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1735832263,
-        "narHash": "sha256-WSAJaSET/z9zJxIs91Ea0Q/H3AndPOKm1rbscGbHhuQ=",
-        "owner": "rcarriga",
-        "repo": "nvim-notify",
-        "rev": "bd9cd51f9ef2f6326fc2bc9931d0718c1794e247",
-        "type": "github"
-      },
-      "original": {
-        "owner": "rcarriga",
-        "repo": "nvim-notify",
-        "type": "github"
-      }
-    },
     "rebelot/kanagawa.nvim": {
       "flake": false,
       "locked": {
@@ -638,7 +606,6 @@
         "akinsho/bufferline.nvim": "akinsho/bufferline.nvim",
         "akinsho/toggleterm.nvim": "akinsho/toggleterm.nvim",
         "andrewferrier/debugprint.nvim": "andrewferrier/debugprint.nvim",
-        "catppuccin/nvim": "catppuccin/nvim",
         "direnv/direnv.vim": "direnv/direnv.vim",
         "flake-utils": "flake-utils",
         "folke/lazy.nvim": "folke/lazy.nvim",
@@ -665,7 +632,6 @@
         "olexsmir/gopher.nvim": "olexsmir/gopher.nvim",
         "rafamadriz/friendly-snippets": "rafamadriz/friendly-snippets",
         "ray-x/go.nvim": "ray-x/go.nvim",
-        "rcarriga/nvim-notify": "rcarriga/nvim-notify",
         "rebelot/kanagawa.nvim": "rebelot/kanagawa.nvim",
         "saadparwaiz1/cmp_luasnip": "saadparwaiz1/cmp_luasnip",
         "shaunsingh/nord.nvim": "shaunsingh/nord.nvim",

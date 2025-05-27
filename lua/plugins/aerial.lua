@@ -32,8 +32,4 @@ return {
         },
         config = config,
     },
-
-    colorscheme_integrations = {
-        aerial = true,
-    },
 }

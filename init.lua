@@ -16,7 +16,6 @@ local plugins = require "loader" {
     "lspconfig",
     "luasnip",
     "neo-tree",
-    "surround",
     "telescope",
     "treesitter",
     "web-devicons",
@@ -27,12 +26,4 @@ local plugins = require "loader" {
     "nord",
 }
 
-require("lazy").setup(plugins, {
-    defaults = {
-        -- lazy = true
-    },
-
-    install = {
-        colorscheme = { "catppuccin" },
-    },
-})
+require("lazy").setup(plugins, {})

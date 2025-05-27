@@ -27,11 +27,6 @@
     # BEGIN: Colorschemes #
     #######################
 
-    "catppuccin/nvim" = {
-      url = "github:catppuccin/nvim";
-      flake = false;
-    };
-
     "rebelot/kanagawa.nvim" = {
       url = "github:rebelot/kanagawa.nvim";
       flake = false;
@@ -83,11 +78,6 @@
 
     "Bekaboo/dropbar.nvim" = {
       url = "github:Bekaboo/dropbar.nvim";
-      flake = false;
-    };
-
-    "rcarriga/nvim-notify" = {
-      url = "github:rcarriga/nvim-notify";
       flake = false;
     };
 
