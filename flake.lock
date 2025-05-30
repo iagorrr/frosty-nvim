@@ -48,6 +48,22 @@
         "type": "github"
       }
     },
+    "MeanderingProgrammer/render-markdown.nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1748531025,
+        "narHash": "sha256-/E4IW2ObyXxZQHT38KN2d2lOfmSgypSW3dEN3m7y6K8=",
+        "owner": "MeanderingProgrammer",
+        "repo": "render-markdown.nvim",
+        "rev": "048d68028d09ad2e134e7059032b8192a85180b9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MeanderingProgrammer",
+        "repo": "render-markdown.nvim",
+        "type": "github"
+      }
+    },
     "MunifTanjim/nui.nvim": {
       "flake": false,
       "locked": {
@@ -157,22 +173,6 @@
       "original": {
         "owner": "andrewferrier",
         "repo": "debugprint.nvim",
-        "type": "github"
-      }
-    },
-    "catppuccin/nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1748086793,
-        "narHash": "sha256-3BUq4/3WrBbVw37ez16ZajTYWiNUQ6SiV9APHt4uvUU=",
-        "owner": "catppuccin",
-        "repo": "nvim",
-        "rev": "be1e5e6308bb9d016bf5c1565e0f1d5e46400d7a",
-        "type": "github"
-      },
-      "original": {
-        "owner": "catppuccin",
-        "repo": "nvim",
         "type": "github"
       }
     },
@@ -626,27 +626,12 @@
         "type": "github"
       }
     },
-    "rebelot/kanagawa.nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1747828219,
-        "narHash": "sha256-i54hTf4AEFTiJb+j5llC5+Xvepj43DiNJSq0vPZCIAg=",
-        "owner": "rebelot",
-        "repo": "kanagawa.nvim",
-        "rev": "debe91547d7fb1eef34ce26a5106f277fbfdd109",
-        "type": "github"
-      },
-      "original": {
-        "owner": "rebelot",
-        "repo": "kanagawa.nvim",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "3rd/image.nvim": "3rd/image.nvim",
         "Bekaboo/dropbar.nvim": "Bekaboo/dropbar.nvim",
         "L3MON4D3/LuaSnip": "L3MON4D3/LuaSnip",
+        "MeanderingProgrammer/render-markdown.nvim": "MeanderingProgrammer/render-markdown.nvim",
         "MunifTanjim/nui.nvim": "MunifTanjim/nui.nvim",
         "NMAC427/guess-indent.nvim": "NMAC427/guess-indent.nvim",
         "NeogitOrg/neogit": "NeogitOrg/neogit",
@@ -654,7 +639,6 @@
         "akinsho/bufferline.nvim": "akinsho/bufferline.nvim",
         "akinsho/toggleterm.nvim": "akinsho/toggleterm.nvim",
         "andrewferrier/debugprint.nvim": "andrewferrier/debugprint.nvim",
-        "catppuccin/nvim": "catppuccin/nvim",
         "direnv/direnv.vim": "direnv/direnv.vim",
         "flake-utils": "flake-utils",
         "folke/lazy.nvim": "folke/lazy.nvim",
@@ -683,7 +667,6 @@
         "rafamadriz/friendly-snippets": "rafamadriz/friendly-snippets",
         "ray-x/go.nvim": "ray-x/go.nvim",
         "rcarriga/nvim-notify": "rcarriga/nvim-notify",
-        "rebelot/kanagawa.nvim": "rebelot/kanagawa.nvim",
         "saadparwaiz1/cmp_luasnip": "saadparwaiz1/cmp_luasnip",
         "shaunsingh/nord.nvim": "shaunsingh/nord.nvim",
         "sindrets/diffview.nvim": "sindrets/diffview.nvim",

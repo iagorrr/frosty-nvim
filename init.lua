@@ -26,6 +26,7 @@ local plugins = require "loader" {
     "noice",
     "nord",
     "haskell-tools",
+    "render-markdown",
 }
 
 require("lazy").setup(plugins, {

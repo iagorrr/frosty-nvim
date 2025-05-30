@@ -33,16 +33,6 @@
     # BEGIN: Colorschemes #
     #######################
 
-    "catppuccin/nvim" = {
-      url = "github:catppuccin/nvim";
-      flake = false;
-    };
-
-    "rebelot/kanagawa.nvim" = {
-      url = "github:rebelot/kanagawa.nvim";
-      flake = false;
-    };
-
     "shaunsingh/nord.nvim" = {
       url = "github:shaunsingh/nord.nvim";
       flake = false;
@@ -51,6 +41,11 @@
     #####################
     # END: Colorschemes #
     #####################
+
+    "MeanderingProgrammer/render-markdown.nvim" = {
+      url = "github:MeanderingProgrammer/render-markdown.nvim";
+      flake = false;
+    };
 
     "nvimdev/dashboard-nvim" = {
       url = "github:nvimdev/dashboard-nvim";
@@ -311,6 +306,10 @@
         ghc
         haskell-language-server
         haskellPackages.hoogle
+        stack
+
+        # Markdown support
+        python312Packages.pylatexenc
       ];
 
       luaDeps = ps:
