@@ -1,10 +1,10 @@
--- predefined maps unrealted to plugins
+-- [[
+-- Predefined maps unrelated to any plugin may be set here.
+-- They can be set in the `which-key` way.
+-- ]]
 local mappings = {}
 
 mappings.n = {
-    ["<c-u>"] = { "<c-u>zz", "Scroll up" },
-    ["<c-d>"] = { "<c-d>zz", "Scroll down" },
-
     ["<c-h>"] = { "<c-w>h", "Move to left split" },
     ["<c-j>"] = { "<c-w>j", "Move to below split" },
     ["<c-k>"] = { "<c-w>k", "Move to above split" },

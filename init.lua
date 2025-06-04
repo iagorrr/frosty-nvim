@@ -27,14 +27,8 @@ local plugins = require "loader" {
     "nord",
     "haskell-tools",
     "render-markdown",
+    -- Scala support
+    -- "metals",
 }
 
-require("lazy").setup(plugins, {
-    defaults = {
-        -- lazy = true
-    },
-
-    install = {
-        colorscheme = { "catppuccin" },
-    },
-})
+require("lazy").setup(plugins, {})

@@ -241,6 +241,12 @@
       url = "github:folke/noice.nvim";
       flake = false;
     };
+
+    # Scala support
+    "scalameta/nvim-metals" = {
+      url = "github:scalameta/nvim-metals";
+      flake = false;
+    };
   };
 
   outputs = {
@@ -310,6 +316,9 @@
 
         # Markdown support
         python312Packages.pylatexenc
+
+        # Scala support
+        coursier
       ];
 
       luaDeps = ps:

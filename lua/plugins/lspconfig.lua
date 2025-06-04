@@ -1,5 +1,5 @@
 --[[
--- Setup sp for each language based
+-- Setup lsp for each language based
 -- on the definitions at languages.lua
 --]]
 

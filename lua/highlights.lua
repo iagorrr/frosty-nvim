@@ -1,3 +1,6 @@
+-- Highlight's unrelatd to any plugin may be defined here
+-- they will be loaded by `loader.lua`
+
 return function(colors)
     return {
         Search = { bg = colors.surface0, style = { "bold" } },

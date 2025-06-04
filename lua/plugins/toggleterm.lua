@@ -65,6 +65,9 @@ local function config()
         },
     }
 
+    -- for ESC and CTRL+] have the same efect as an ESC in normal mode
+    vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]])
+    vim.keymap.set("t", "<C-[>", [[<C-\><C-n>]])
     require("toggleterm").setup(opts)
 end
 

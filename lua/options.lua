@@ -45,8 +45,6 @@ opt.hidden = true
 opt.ignorecase = true
 opt.smartcase = true
 
-vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]])
-
 -- TODO: Make this string dynamic so when the buffer width changes it wont break...
 opt.laststatus = 0
 -- vim.api.nvim_set_hl(0, "Statusline", { link = "FloatBorder" })

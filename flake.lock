@@ -668,6 +668,7 @@
         "ray-x/go.nvim": "ray-x/go.nvim",
         "rcarriga/nvim-notify": "rcarriga/nvim-notify",
         "saadparwaiz1/cmp_luasnip": "saadparwaiz1/cmp_luasnip",
+        "scalameta/nvim-metals": "scalameta/nvim-metals",
         "shaunsingh/nord.nvim": "shaunsingh/nord.nvim",
         "sindrets/diffview.nvim": "sindrets/diffview.nvim",
         "stevearc/aerial.nvim": "stevearc/aerial.nvim",
@@ -690,6 +691,22 @@
       "original": {
         "owner": "saadparwaiz1",
         "repo": "cmp_luasnip",
+        "type": "github"
+      }
+    },
+    "scalameta/nvim-metals": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1747680659,
+        "narHash": "sha256-WG+JC++DLhgM9m250tHrVDaai/eVNWmA2g3zPfR/zLg=",
+        "owner": "scalameta",
+        "repo": "nvim-metals",
+        "rev": "d1639b7fccd845875e33444c7860ad292ab8670d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "scalameta",
+        "repo": "nvim-metals",
         "type": "github"
       }
     },

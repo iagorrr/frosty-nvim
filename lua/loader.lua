@@ -1,7 +1,22 @@
+--[[ 
+        As the name suggests it loads a a few things:
+
+                - The lazy plugin
+                - Highlights
+                - Mappings
+]]
+
+local utils = require "utils"
+
 FROSTY_PACKAGES = FROSTY_PACKAGES or {}
 
 FROSTY_CONFIG = { mappings = require "mappings", colorscheme_integrations = {}, highlights = require "highlights" }
 
+--[[
+        Set up `lazy` path, if it isn't set yet
+        And also prepend the path to the neovim
+        run time paths.
+]]
 local lazy_path = FROSTY_PACKAGES["folke/lazy.nvim"]
 
 if not lazy_path then
@@ -21,9 +36,9 @@ end
 
 vim.opt.rtp:prepend(lazy_path)
 
-local function ensure_table(object)
-    return type(object) == "table" and object or { object }
-end
+-- local function ensure_table(object)
+--     return type(object) == "table" and object or { object }
+-- end
 
 local function make_spec_local(spec)
     if FROSTY_PACKAGES[spec[1]] then
@@ -35,13 +50,13 @@ local function make_spec_local(spec)
 end
 
 local function make_plugin_local(plugin)
-    plugin = make_spec_local(ensure_table(plugin))
+    plugin = make_spec_local(utils.ensure_table(plugin))
 
     if plugin.dependencies then
-        plugin.dependencies = ensure_table(plugin.dependencies)
+        plugin.dependencies = utils.ensure_table(plugin.dependencies)
 
         for i, dependency in ipairs(plugin.dependencies) do
-            plugin.dependencies[i] = make_spec_local(ensure_table(dependency))
+            plugin.dependencies[i] = make_spec_local(utils.ensure_table(dependency))
         end
     end
 
