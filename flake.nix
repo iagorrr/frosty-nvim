@@ -240,5 +240,10 @@
       url = "github:folke/which-key.nvim";
       flake = false;
     };
+
+    "noice.nvim" = {
+      url = "github:folke/noice.nvim";
+      flake = false;
+    };
   };
 }
