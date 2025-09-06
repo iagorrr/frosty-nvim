@@ -27,3 +27,7 @@ opt.termguicolors = true
 opt.timeoutlen = 100
 opt.whichwrap = "bshl<>[]~"
 opt.wrap = false
+
+-- Enables spell checker for both english and portuguese
+vim.opt.spell = true
+vim.opt.spelllang = { "en_us", "pt_br" }
