@@ -1,5 +1,5 @@
--- TODO: Switch to vim.o
 local opt = vim.opt
+-- TODO: Switch to vim.o
 
 opt.cmdheight = 0
 opt.confirm = true
@@ -26,6 +26,6 @@ opt.splitbelow = true
 opt.splitright = true
 opt.tabstop = 4
 opt.termguicolors = true
-opt.timeoutlen = 500
+opt.timeoutlen = 100
 opt.whichwrap = "bshl<>[]~"
 opt.wrap = false
