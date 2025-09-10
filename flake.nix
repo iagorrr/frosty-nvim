@@ -151,10 +151,6 @@
       url = "github:folke/lazy.nvim";
       flake = false;
     };
-    "lualine.nvim" = {
-      url = "github:nvim-lualine/lualine.nvim";
-      flake = false;
-    };
     "markview.nvim" = {
       url = "github:OXY2DEV/markview.nvim";
       flake = false;
