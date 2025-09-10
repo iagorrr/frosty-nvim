@@ -151,6 +151,10 @@
       url = "github:OXY2DEV/markview.nvim";
       flake = false;
     };
+    "monochrome.nvim" = {
+      url = "github:kdheepak/monochrome.nvim";
+      flake = false;
+    };
     "neo-tree.nvim" = {
       url = "github:nvim-neo-tree/neo-tree.nvim";
       flake = false;
