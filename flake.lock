@@ -162,22 +162,6 @@
         "type": "github"
       }
     },
-    "lualine.nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1754970649,
-        "narHash": "sha256-lWt2kpW+hsTMWt8tar/+AISTDrIt4Jn27NmI9j+Xt4s=",
-        "owner": "nvim-lualine",
-        "repo": "lualine.nvim",
-        "rev": "b8c23159c0161f4b89196f74ee3a6d02cdc3a955",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nvim-lualine",
-        "repo": "lualine.nvim",
-        "type": "github"
-      }
-    },
     "markview.nvim": {
       "flake": false,
       "locked": {
@@ -446,7 +430,6 @@
         "gitsigns.nvim": "gitsigns.nvim",
         "guess-indent.nvim": "guess-indent.nvim",
         "lazy.nvim": "lazy.nvim",
-        "lualine.nvim": "lualine.nvim",
         "markview.nvim": "markview.nvim",
         "neo-tree.nvim": "neo-tree.nvim",
         "neogit": "neogit",
