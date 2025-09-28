@@ -190,6 +190,10 @@
       url = "github:neovim/nvim-lspconfig";
       flake = false;
     };
+    "nvim-origami" = {
+      url = "github:chrisgrieser/nvim-origami";
+      flake = false;
+    };
     "nvim-treesitter" = {
       url = "github:nvim-treesitter/nvim-treesitter";
       flake = false;

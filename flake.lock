@@ -322,6 +322,22 @@
         "type": "github"
       }
     },
+    "nvim-origami": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1757863545,
+        "narHash": "sha256-Js5OfpNT8gORdZ+aePHV+PxkBHcJRVpsFj0BGYzLSVE=",
+        "owner": "chrisgrieser",
+        "repo": "nvim-origami",
+        "rev": "eba1fb2662fac78dc65f6182f68e82830a3d4ecf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "chrisgrieser",
+        "repo": "nvim-origami",
+        "type": "github"
+      }
+    },
     "nvim-treesitter": {
       "flake": false,
       "locked": {
@@ -440,6 +456,7 @@
         "nvim-highlight-colors": "nvim-highlight-colors",
         "nvim-lightbulb": "nvim-lightbulb",
         "nvim-lspconfig": "nvim-lspconfig",
+        "nvim-origami": "nvim-origami",
         "nvim-treesitter": "nvim-treesitter",
         "nvim-treesitter-context": "nvim-treesitter-context",
         "nvim-treesitter-textobjects": "nvim-treesitter-textobjects",
@@ -448,6 +465,7 @@
         "plenary.nvim": "plenary.nvim",
         "satellite.nvim": "satellite.nvim",
         "snacks.nvim": "snacks.nvim",
+        "toggleterm.nvim": "toggleterm.nvim",
         "which-key.nvim": "which-key.nvim"
       }
     },
@@ -495,6 +513,22 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "toggleterm.nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1741512039,
+        "narHash": "sha256-fytbX+L12TK45YKFU9K+iFJcDrwboKabihc2LtX29J4=",
+        "owner": "akinsho",
+        "repo": "toggleterm.nvim",
+        "rev": "9a88eae817ef395952e08650b3283726786fb5fb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "akinsho",
+        "repo": "toggleterm.nvim",
         "type": "github"
       }
     },

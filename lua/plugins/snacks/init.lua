@@ -4,7 +4,7 @@ local default_opts = {
     input = { enabled = true },
     picker = { enabled = true },
     rename = { enable = true },
-    terminal = { enabled = true },
+    terminal = require "plugins.snacks.terminal",
     words = { enable = true },
 
     statuscolumn = {
