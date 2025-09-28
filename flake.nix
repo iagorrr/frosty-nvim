@@ -57,6 +57,9 @@
 
         bash-language-server
         shfmt
+
+        clang-tools
+        cmake-language-server
       ];
 
       runtimeDepsPath = pkgs.symlinkJoin {
