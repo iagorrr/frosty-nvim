@@ -9,7 +9,6 @@ opt.foldlevel = 99
 opt.foldtext = ""
 opt.ignorecase = true
 opt.laststatus = 3
-opt.lazyredraw = true
 opt.mouse = "a"
 opt.number = true
 opt.relativenumber = true
