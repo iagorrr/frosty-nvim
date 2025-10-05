@@ -27,9 +27,6 @@ map("i", "<a-k>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move line up" })
 map("v", "<a-j>", ":<c-u>execute \"'<,'>move '>+\" . v:count1<cr>gv=gv", { desc = "Move selection down" })
 map("v", "<a-k>", ":<c-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", { desc = "Move selection up" })
 
-map("n", "<leader>-", "<c-w>s", { desc = "Horizontal split" })
-map("n", "<leader>|", "<c-w>v", { desc = "Vertical split" })
-
 map("n", "<c-h>", "<c-w>h", { desc = "Go to left window" })
 map("n", "<c-j>", "<c-w>j", { desc = "Go to lower window" })
 map("n", "<c-k>", "<c-w>k", { desc = "Go to upper window" })
