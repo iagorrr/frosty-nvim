@@ -227,6 +227,10 @@
       url = "github:lewis6991/satellite.nvim";
       flake = false;
     };
+    "smear-cursor.nvim" = {
+      url = "github:sphamba/smear-cursor.nvim";
+      flake = false;
+    };
     "snacks.nvim" = {
       url = "github:folke/snacks.nvim";
       flake = false;
