@@ -155,6 +155,10 @@
       url = "github:nvim-lualine/lualine.nvim";
       flake = false;
     };
+    "legendary.nvim" = {
+      url = "github:mrjones2014/legendary.nvim";
+      flake = false;
+    };
     "markview.nvim" = {
       url = "github:OXY2DEV/markview.nvim";
       flake = false;
@@ -189,6 +193,10 @@
     };
     "nvim-lspconfig" = {
       url = "github:neovim/nvim-lspconfig";
+      flake = false;
+    };
+    "nvim-origami" = {
+      url = "github:chrisgrieser/nvim-origami";
       flake = false;
     };
     "nvim-treesitter" = {

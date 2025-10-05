@@ -178,6 +178,22 @@
         "type": "github"
       }
     },
+    "legendary.nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1742479088,
+        "narHash": "sha256-4UKfVauzOlSEVswdnB08b6CLISzgf/3pQ/hrSbk/6AU=",
+        "owner": "mrjones2014",
+        "repo": "legendary.nvim",
+        "rev": "6de819bc285eb8c420e49e82c21d5bb696b5a727",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mrjones2014",
+        "repo": "legendary.nvim",
+        "type": "github"
+      }
+    },
     "markview.nvim": {
       "flake": false,
       "locked": {
@@ -338,6 +354,22 @@
         "type": "github"
       }
     },
+    "nvim-origami": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1757863545,
+        "narHash": "sha256-Js5OfpNT8gORdZ+aePHV+PxkBHcJRVpsFj0BGYzLSVE=",
+        "owner": "chrisgrieser",
+        "repo": "nvim-origami",
+        "rev": "eba1fb2662fac78dc65f6182f68e82830a3d4ecf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "chrisgrieser",
+        "repo": "nvim-origami",
+        "type": "github"
+      }
+    },
     "nvim-treesitter": {
       "flake": false,
       "locked": {
@@ -447,6 +479,7 @@
         "guess-indent.nvim": "guess-indent.nvim",
         "lazy.nvim": "lazy.nvim",
         "lualine.nvim": "lualine.nvim",
+        "legendary.nvim": "legendary.nvim",
         "markview.nvim": "markview.nvim",
         "neo-tree.nvim": "neo-tree.nvim",
         "neogit": "neogit",
@@ -457,6 +490,7 @@
         "nvim-highlight-colors": "nvim-highlight-colors",
         "nvim-lightbulb": "nvim-lightbulb",
         "nvim-lspconfig": "nvim-lspconfig",
+        "nvim-origami": "nvim-origami",
         "nvim-treesitter": "nvim-treesitter",
         "nvim-treesitter-context": "nvim-treesitter-context",
         "nvim-treesitter-textobjects": "nvim-treesitter-textobjects",
