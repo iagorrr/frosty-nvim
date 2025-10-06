@@ -6,6 +6,36 @@ local default_opts = {
     },
 }
 
+local keys = {
+    {
+        "<leader>gn",
+        "<cmd>Neogit kind=tab<cr>",
+        desc = "Toggle Neogit",
+    },
+
+    {
+        "<leader>hs",
+        function()
+            require("gitsigns").stage_hunk()
+        end,
+        desc = "Stage hunk",
+    },
+    {
+        "<leader>hr",
+        function()
+            require("gitsigns").reset_hunk()
+        end,
+        desc = "Discard hunk",
+    },
+    {
+        "<leader>hu",
+        function()
+            require("gitsigns").undo_stage_hunk()
+        end,
+        desc = "Undo stage hunk",
+    },
+}
+
 -- Config function defined in `plugins/neo-tree.lua`
 return {
     "NeogitOrg/neogit",
@@ -14,10 +44,9 @@ return {
         "sindrets/diffview.nvim",
     },
 
+    keys = keys,
+
     cmd = "Neogit",
-    keys = {
-        { "<leader>gg", "<cmd>Neogit<cr>", desc = "Neogit" },
-    },
 
     opts = default_opts,
 

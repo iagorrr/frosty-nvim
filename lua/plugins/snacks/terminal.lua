@@ -3,9 +3,12 @@ vim.keymap.set({ "n", "i", "t" }, "<C-\\>", function()
 end)
 
 return {
-    enabled = true,
-    win = {
-        style = "float",
-        border = "rounded",
+    opts = {
+        enabled = true,
+        win = {
+            style = "float",
+            border = "rounded",
+        },
     },
+    keys = {},
 }

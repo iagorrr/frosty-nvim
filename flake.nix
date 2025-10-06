@@ -57,6 +57,8 @@
 
         bash-language-server
         shfmt
+
+        lazygit
       ];
 
       runtimeDepsPath = pkgs.symlinkJoin {
@@ -151,12 +153,12 @@
       url = "github:folke/lazy.nvim";
       flake = false;
     };
-    "lualine.nvim" = {
-      url = "github:nvim-lualine/lualine.nvim";
-      flake = false;
-    };
     "legendary.nvim" = {
       url = "github:mrjones2014/legendary.nvim";
+      flake = false;
+    };
+    "lualine.nvim" = {
+      url = "github:nvim-lualine/lualine.nvim";
       flake = false;
     };
     "markview.nvim" = {

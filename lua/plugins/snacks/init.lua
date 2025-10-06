@@ -1,11 +1,15 @@
 -- TODO: Are all these enabled lines needed?
+local lazygit = require "plugins.snacks.lazygit"
+local terminal = require "plugins.snacks.terminal"
+
 local default_opts = {
     indent = { enabled = true },
     input = { enabled = true },
     picker = { enabled = true },
     rename = { enable = true },
-    terminal = require "plugins.snacks.terminal",
+    terminal = terminal.opts,
     words = { enable = true },
+    lazygit = lazygit.opts,
 
     statuscolumn = {
         enabled = true,
@@ -52,14 +56,8 @@ local function config(_, opts)
     require("snacks").setup(opts)
 end
 
-return {
-    "folke/snacks.nvim",
-
-    priority = 1500,
-    lazy = false,
-
-    -- stylua: ignore
-    keys = {
+-- stylua: ignore
+local keys = {
         { "<leader>x", function() Snacks.bufdelete() end, desc = "Delete buffer" },
         { "<leader>bd", function() Snacks.bufdelete() end, desc = "Delete buffer" },
         { "<leader>ba", function() Snacks.bufdelete.all() end, desc = "Delete all buffers" },
@@ -71,8 +69,15 @@ return {
 
         { "]r", function() Snacks.words.jump(vim.v.count1, true) end, desc = "Next reference" },
         { "[r", function() Snacks.words.jump(-vim.v.count1, true) end, desc = "Previous reference" },
-    },
+    }
+vim.list_extend(keys, lazygit.keys)
+vim.list_extend(keys, terminal.keys)
 
+return {
+    "folke/snacks.nvim",
+    priority = 1500,
+    lazy = false,
+    keys = keys,
     opts = default_opts,
     config = config,
 
