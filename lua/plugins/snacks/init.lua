@@ -66,6 +66,7 @@ local keys = {
         { "<leader>fp", function() Snacks.picker.pickers() end, desc = "Pickers" },
         { "<leader>ff", function() Snacks.picker.files() end, desc = "Files" },
         { "<leader>fg", function() Snacks.picker.grep() end, desc = "Grep" },
+        { "<leader>fh", function() Snacks.picker.help() end, desc = "Help" },
 
         { "]r", function() Snacks.words.jump(vim.v.count1, true) end, desc = "Next reference" },
         { "[r", function() Snacks.words.jump(-vim.v.count1, true) end, desc = "Previous reference" },
