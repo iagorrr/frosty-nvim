@@ -59,6 +59,9 @@
         shfmt
 
         lazygit
+
+        clang-tools
+        cmake-language-server
       ];
 
       runtimeDepsPath = pkgs.symlinkJoin {
