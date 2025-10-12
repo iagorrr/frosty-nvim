@@ -30,3 +30,8 @@ opt.timeoutlen = 100
 -- Enables spell checker for both english and portuguese
 vim.opt.spell = true
 vim.opt.spelllang = { "en_us", "pt_br" }
+
+-- set cursor to default when leaving neovim
+vim.api.nvim_create_autocmd("VimLeave", {
+    command = "set guicursor=a:ver25",
+})
