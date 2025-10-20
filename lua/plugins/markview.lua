@@ -2,7 +2,7 @@ local default_opts = {
     preview = {
         icons = "devicons",
         modes = { "n", "no", "c", "i" },
-        hybrid_modes = { "i" },
+        hybrid_modes = { "i", "n" },
     },
 
     markdown = {
