@@ -162,22 +162,6 @@
         "type": "github"
       }
     },
-    "lualine.nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1754970649,
-        "narHash": "sha256-lWt2kpW+hsTMWt8tar/+AISTDrIt4Jn27NmI9j+Xt4s=",
-        "owner": "nvim-lualine",
-        "repo": "lualine.nvim",
-        "rev": "b8c23159c0161f4b89196f74ee3a6d02cdc3a955",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nvim-lualine",
-        "repo": "lualine.nvim",
-        "type": "github"
-      }
-    },
     "legendary.nvim": {
       "flake": false,
       "locked": {
@@ -191,6 +175,22 @@
       "original": {
         "owner": "mrjones2014",
         "repo": "legendary.nvim",
+        "type": "github"
+      }
+    },
+    "lualine.nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1754970649,
+        "narHash": "sha256-lWt2kpW+hsTMWt8tar/+AISTDrIt4Jn27NmI9j+Xt4s=",
+        "owner": "nvim-lualine",
+        "repo": "lualine.nvim",
+        "rev": "b8c23159c0161f4b89196f74ee3a6d02cdc3a955",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvim-lualine",
+        "repo": "lualine.nvim",
         "type": "github"
       }
     },
@@ -478,8 +478,8 @@
         "gitsigns.nvim": "gitsigns.nvim",
         "guess-indent.nvim": "guess-indent.nvim",
         "lazy.nvim": "lazy.nvim",
-        "lualine.nvim": "lualine.nvim",
         "legendary.nvim": "legendary.nvim",
+        "lualine.nvim": "lualine.nvim",
         "markview.nvim": "markview.nvim",
         "neo-tree.nvim": "neo-tree.nvim",
         "neogit": "neogit",
@@ -498,6 +498,7 @@
         "persistence.nvim": "persistence.nvim",
         "plenary.nvim": "plenary.nvim",
         "satellite.nvim": "satellite.nvim",
+        "scope.nvim": "scope.nvim",
         "smear-cursor.nvim": "smear-cursor.nvim",
         "snacks.nvim": "snacks.nvim",
         "which-key.nvim": "which-key.nvim"
@@ -516,6 +517,22 @@
       "original": {
         "owner": "lewis6991",
         "repo": "satellite.nvim",
+        "type": "github"
+      }
+    },
+    "scope.nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1760516095,
+        "narHash": "sha256-HsXeGF1eSZ4wjvkzeIGmjBr0/tv3QIXT7cvbW8p+ESI=",
+        "owner": "tiagovla",
+        "repo": "scope.nvim",
+        "rev": "228aabdb1b9cc74f0c0ccec88e79873857236e49",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tiagovla",
+        "repo": "scope.nvim",
         "type": "github"
       }
     },

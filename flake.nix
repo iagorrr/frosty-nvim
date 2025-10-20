@@ -240,6 +240,10 @@
       url = "github:folke/snacks.nvim";
       flake = false;
     };
+    "scope.nvim" = {
+      url = "github:tiagovla/scope.nvim";
+      flake = false;
+    };
     "which-key.nvim" = {
       url = "github:folke/which-key.nvim";
       flake = false;
