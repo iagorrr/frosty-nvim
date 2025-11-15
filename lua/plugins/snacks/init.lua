@@ -1,6 +1,7 @@
 -- TODO: Are all these enabled lines needed?
 local lazygit = require "plugins.snacks.lazygit"
 local terminal = require "plugins.snacks.terminal"
+local zen = require "plugins.snacks.zen"
 
 local default_opts = {
     indent = { enabled = true },
@@ -10,6 +11,7 @@ local default_opts = {
     terminal = terminal.opts,
     words = { enable = true },
     lazygit = lazygit.opts,
+    zen = zen.opts,
 
     statuscolumn = {
         enabled = true,
