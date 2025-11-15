@@ -4,6 +4,7 @@ local git_icons = require("icons").git_gutter
 
 local default_opts = {
     current_only = true,
+    winblend = 0,
 
     handlers = {
         gitsigns = {
