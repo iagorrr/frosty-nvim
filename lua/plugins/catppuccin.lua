@@ -1,9 +1,9 @@
 local default_opts = {
-    flavour = "frappe",
+    flavour = "mocha",
 
     background = {
         light = "latte",
-        dark = "frappe",
+        dark = "mocha",
     },
 
     transparent_background = true,
