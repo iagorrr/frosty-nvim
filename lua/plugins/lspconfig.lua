@@ -16,6 +16,12 @@ local default_opts = {
 }
 
 local function config(_, opts)
+    -- ad-hoc setting, to recognize avro as json
+    vim.filetype.add {
+        extension = {
+            avsc = "json",
+        },
+    }
     -- Server setup
     for server, server_opts in pairs(opts.servers) do
         vim.lsp.config(server, server_opts)
