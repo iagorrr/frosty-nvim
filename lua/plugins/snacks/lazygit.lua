@@ -1,10 +1,11 @@
 -- See more about this at https://github.com/folke/snacks.nvim/blob/main/docs/lazygit.md
+local ui = require "settings.ui"
 return {
     opts = {
         configure = true,
         win = {
             style = "float",
-            border = "rounded",
+            border = ui.border,
         },
     },
     -- stylua: ignore

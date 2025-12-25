@@ -1,6 +1,7 @@
 -- TODO: Modularise which-key groups (maybe?)
 
 local group_icons = require("icons").keymap_groups
+local ui = require "settings.ui"
 
 local default_opts = {
     spec = {
@@ -13,6 +14,9 @@ local default_opts = {
         { "<leader><tab>", group = "Tabs", icon = group_icons.tabs },
         { "<leader>u", group = "UI/UX", icon = group_icons.ui },
         { "<leader>ul", group = "Language Features" },
+    },
+    win = {
+        border = ui.border,
     },
 }
 

@@ -1,3 +1,4 @@
+local ui = require "settings.ui"
 local plugin_path = "mrjones2014/legendary.nvim"
 local function config()
     require("legendary").setup {
@@ -121,7 +122,7 @@ local function config()
             -- 'print' for `print(result)`, 'float' for a floating window.
             results_view = "float",
             -- Border style for floating windows related to the scratchpad
-            float_border = "rounded",
+            float_border = ui.border,
             -- Whether to restore scratchpad contents from a cache file
             keep_contents = true,
         },

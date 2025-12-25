@@ -6,7 +6,7 @@ local zen = require "plugins.snacks.zen"
 local default_opts = {
     indent = { enabled = true },
     input = { enabled = true },
-    picker = { enabled = true },
+    picker = require "plugins.snacks.picker",
     rename = { enable = true },
     terminal = terminal.opts,
     words = { enable = true },

@@ -1,9 +1,5 @@
 local ui = require "settings.ui"
 
-vim.keymap.set({ "n", "i", "t" }, "<C-\\>", function()
-    Snacks.terminal(nil, { win = { style = "float" } })
-end)
-
 return {
     opts = {
         enabled = true,

@@ -1,4 +1,5 @@
 -- BUG: It keep adding a blank line at the bottom
+local ui = require "settings.ui"
 
 local function config()
     local opts = {
@@ -41,7 +42,7 @@ local function config()
                     height = 10,
                 },
                 border = {
-                    style = "rounded",
+                    style = ui.border,
                     padding = { 0, 1 },
                 },
                 win_options = {
