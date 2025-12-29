@@ -1,15 +1,16 @@
--- TODO: Are all these enabled lines needed?
+-- Snacks definitions
 local lazygit = require "plugins.snacks.lazygit"
 local terminal = require "plugins.snacks.terminal"
 local zen = require "plugins.snacks.zen"
+local picker = require "plugins.snacks.picker"
 
 local default_opts = {
     indent = { enabled = true },
     input = { enabled = true },
-    picker = require "plugins.snacks.picker",
+    picker = picker.opts,
     rename = { enable = true },
-    terminal = terminal.opts,
     words = { enable = true },
+    terminal = terminal.opts,
     lazygit = lazygit.opts,
     zen = zen.opts,
 
