@@ -24,13 +24,6 @@ local default_opts = {
         enabled = true,
         style = "fancy",
     },
-
-    dashboard = {
-        enabled = true,
-        preset = {
-            header = "█████\n    ██\n      ██\n        ██\n        ████\n        ████\n        ██  ██\n        ██    ██\n          ██      ████",
-        },
-    },
 }
 
 local function config(_, opts)
