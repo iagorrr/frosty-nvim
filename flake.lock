@@ -499,7 +499,6 @@
         "plenary.nvim": "plenary.nvim",
         "satellite.nvim": "satellite.nvim",
         "scope.nvim": "scope.nvim",
-        "smear-cursor.nvim": "smear-cursor.nvim",
         "snacks.nvim": "snacks.nvim",
         "which-key.nvim": "which-key.nvim"
       }
@@ -533,22 +532,6 @@
       "original": {
         "owner": "tiagovla",
         "repo": "scope.nvim",
-        "type": "github"
-      }
-    },
-    "smear-cursor.nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1759303226,
-        "narHash": "sha256-X2+sEpThsa3Jgj3vxXTH1sSzrQ0hqLw5iqjqPMgk4aU=",
-        "owner": "sphamba",
-        "repo": "smear-cursor.nvim",
-        "rev": "abfa5835920b1d76c0e24e1465a618ad914be90a",
-        "type": "github"
-      },
-      "original": {
-        "owner": "sphamba",
-        "repo": "smear-cursor.nvim",
         "type": "github"
       }
     },
