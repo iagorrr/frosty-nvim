@@ -500,7 +500,8 @@
         "satellite.nvim": "satellite.nvim",
         "scope.nvim": "scope.nvim",
         "snacks.nvim": "snacks.nvim",
-        "which-key.nvim": "which-key.nvim"
+        "which-key.nvim": "which-key.nvim",
+        "yazi.nvim": "yazi.nvim"
       }
     },
     "satellite.nvim": {
@@ -579,6 +580,22 @@
       "original": {
         "owner": "folke",
         "repo": "which-key.nvim",
+        "type": "github"
+      }
+    },
+    "yazi.nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1767113440,
+        "narHash": "sha256-e/U4xcGWkAdx+iWQfzOmmfceVKrsGKFBkJyJC3GpCLs=",
+        "owner": "mikavilpas",
+        "repo": "yazi.nvim",
+        "rev": "eec2d77b66dd89151394ba8f5a95d3be8439fd1c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mikavilpas",
+        "repo": "yazi.nvim",
         "type": "github"
       }
     }
