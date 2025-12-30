@@ -3,6 +3,8 @@ require "autocmds"
 require "keymaps"
 require "gui"
 
+local ui = require "settings.ui"
+
 local lazy_path
 
 if FROSTY_PACKAGES then
@@ -62,5 +64,9 @@ require("lazy").setup {
         rtp = {
             paths = FROSTY_RUNTIMEPATHS,
         },
+    },
+
+    ui = {
+        border = ui.border,
     },
 }
