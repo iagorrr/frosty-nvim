@@ -62,6 +62,12 @@
 
         clang-tools
         cmake-language-server
+
+        # Golang
+        go
+        go-tools
+        gomodifytags
+        gopls
       ];
 
       runtimeDepsPath = pkgs.symlinkJoin {
@@ -160,6 +166,7 @@
       url = "github:folke/lazy.nvim";
       flake = false;
     };
+
     "legendary.nvim" = {
       url = "github:mrjones2014/legendary.nvim";
       flake = false;
