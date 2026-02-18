@@ -26,6 +26,8 @@ opt.splitright = true
 opt.tabstop = 4
 opt.termguicolors = true
 opt.timeoutlen = 100
+-- Set to zero to prevent swapping lines when pressing esc + (hjkl)
+opt.ttimeoutlen = 0
 
 -- Enables spell checker for both english and portuguese
 vim.opt.spell = true

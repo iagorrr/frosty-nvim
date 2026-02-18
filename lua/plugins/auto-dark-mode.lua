@@ -17,5 +17,5 @@ end
 return {
     pluginAlias,
     config = config,
-    event = "LazyDone",
+    lazy = false,
 }
