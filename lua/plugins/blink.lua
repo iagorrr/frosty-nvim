@@ -1,5 +1,7 @@
+local ui = require "settings.ui"
+
 local default_opts = {
-    signature = { enabled = true },
+    signature = { enabled = true, window = { border = ui.border } },
 
     appearance = {
         nerd_font_variant = "normal",
@@ -14,6 +16,7 @@ local default_opts = {
                     { "kind_icon", "kind", gap = 1 },
                 },
             },
+            border = ui.border,
         },
 
         list = {
