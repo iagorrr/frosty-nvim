@@ -60,7 +60,7 @@ local default_opts = {
         ["<up>"] = { "select_prev", "fallback" },
         ["<down>"] = { "select_next", "fallback" },
 
-        ["<tab>"] = {
+        ["<c-n>"] = {
             function(cmp)
                 if cmp.snippet_active() then
                     return cmp.accept()
@@ -71,7 +71,7 @@ local default_opts = {
             "snippet_forward",
             "fallback",
         },
-        ["<s-tab>"] = { "select_prev", "snippet_backward", "fallback" },
+        ["<c-p>"] = { "select_prev", "snippet_backward", "fallback" },
     },
 
     fuzzy = {
