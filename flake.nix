@@ -127,7 +127,7 @@
   # PLUGINS START
   inputs = {
     "auto-dark-mode.nvim" = {
-      url = "github:f-person/auto-dark-mode.nvim";
+      url = "github:iagorrr/auto-dark-mode.nvim";
       flake = false;
     };
     "blink.cmp" = {

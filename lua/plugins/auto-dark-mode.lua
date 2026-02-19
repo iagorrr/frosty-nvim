@@ -1,13 +1,16 @@
-local pluginAlias = "f-person/auto-dark-mode.nvim"
+local pluginAlias = "iagorrr/auto-dark-mode.nvim"
+local ui = require "settings.ui"
 
 local function config()
     local opts = {
         update_interval = 5000,
         set_dark_mode = function()
-            vim.cmd.colorscheme "catppuccin-mocha"
+            vim.notify("auto-dark-mode: Using to dark mode " .. ui.darkColorscheme)
+            vim.cmd.colorscheme(ui.darkColorscheme)
         end,
         set_light_mode = function()
-            vim.cmd.colorscheme "catppuccin-latte"
+            vim.notify("auto-dark-mode: Using to light mode " .. ui.lightColorscheme)
+            vim.cmd.colorscheme(ui.lightColorscheme)
         end,
         fallback = "dark",
     }
