@@ -88,4 +88,13 @@ icons.lightbulb = {
     lens = "",
 }
 
+icons.mode = {
+    NORMAL = "󰆾",
+    INSERT = "",
+    VISUAL = "󰈈",
+    COMMAND = "",
+    REPLACE = "",
+    TERMINAL = "",
+}
+
 return icons
