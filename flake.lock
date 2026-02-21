@@ -96,6 +96,22 @@
         "type": "github"
       }
     },
+    "dropbar.nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1759678642,
+        "narHash": "sha256-FzJXZcbwk3kEqmRFwKVavL1umPugdbJVYvaBZwiEK0I=",
+        "owner": "Bekaboo",
+        "repo": "dropbar.nvim",
+        "rev": "ce202248134e3949aac375fd66c28e5207785b10",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Bekaboo",
+        "repo": "dropbar.nvim",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -490,6 +506,7 @@
         "catppuccin": "catppuccin",
         "conform.nvim": "conform.nvim",
         "diffview.nvim": "diffview.nvim",
+        "dropbar.nvim": "dropbar.nvim",
         "flake-utils": "flake-utils",
         "friendly-snippets": "friendly-snippets",
         "gitsigns.nvim": "gitsigns.nvim",

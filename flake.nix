@@ -255,6 +255,10 @@
       url = "github:folke/which-key.nvim";
       flake = false;
     };
+    "dropbar.nvim" = {
+      url = "github:Bekaboo/dropbar.nvim";
+      flake = false;
+    };
     "yazi.nvim" = {
       url = "github:mikavilpas/yazi.nvim";
       flake = false;
