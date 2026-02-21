@@ -9,10 +9,13 @@ local function config()
             format = {},
             opts = {
                 relative = "editor",
-                row = 1, -- top of editor
+                row = 0, -- top of editor
                 col = "50%",
-                width = 60,
             },
+        },
+        messages = {
+            enabled = true,
+            view = "notify",
         },
         routes = {
             {
@@ -27,7 +30,6 @@ local function config()
                     col = "50%",
                 },
                 size = {
-                    width = 60,
                     height = "auto",
                 },
             },
@@ -38,12 +40,11 @@ local function config()
                     col = "50%",
                 },
                 size = {
-                    width = 60,
                     height = 10,
                 },
                 border = {
                     style = ui.border,
-                    padding = { 0, 1 },
+                    padding = { 0, 0 },
                 },
                 win_options = {
                     winhighlight = { Normal = "Normal", FloatBorder = "DiagnosticInfo" },
@@ -57,7 +58,7 @@ end
 
 return {
     "folke/noice.nvim",
-    lazy = false,
+    event = "VeryLazy",
     priority = 1501,
     config = config,
 }

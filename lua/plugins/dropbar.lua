@@ -5,6 +5,13 @@ local opts = {
         win_configs = {
             border = ui.border,
         },
+        entry = {
+            padding = {
+                left = 0,
+                right = 0,
+            },
+        },
+        keymaps = {},
     },
 }
 
