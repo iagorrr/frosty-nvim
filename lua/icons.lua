@@ -96,6 +96,7 @@ icons.mode = {
     REPLACE = "",
     TERMINAL = "",
 }
+icons.mode["V-LINE"] = "󱀦"
 
 icons.directions = {
     simple = {
