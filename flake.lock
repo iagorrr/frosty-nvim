@@ -64,6 +64,22 @@
         "type": "github"
       }
     },
+    "colorful-winsep.nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1771503745,
+        "narHash": "sha256-xZKDP/9iG2+tt8nqNpirvCe5olNj/jLYrVV9D6o+UXk=",
+        "owner": "nvim-zh",
+        "repo": "colorful-winsep.nvim",
+        "rev": "84432d9966fafaa08dd9040c98b0011045d8e964",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvim-zh",
+        "repo": "colorful-winsep.nvim",
+        "type": "github"
+      }
+    },
     "conform.nvim": {
       "flake": false,
       "locked": {
@@ -504,6 +520,7 @@
         "blink.cmp": "blink.cmp",
         "bufferline.nvim": "bufferline.nvim",
         "catppuccin": "catppuccin",
+        "colorful-winsep.nvim": "colorful-winsep.nvim",
         "conform.nvim": "conform.nvim",
         "diffview.nvim": "diffview.nvim",
         "dropbar.nvim": "dropbar.nvim",

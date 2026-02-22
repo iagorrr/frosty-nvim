@@ -259,6 +259,10 @@
       url = "github:Bekaboo/dropbar.nvim";
       flake = false;
     };
+    "colorful-winsep.nvim" = {
+      url = "github:nvim-zh/colorful-winsep.nvim";
+      flake = false;
+    };
     "yazi.nvim" = {
       url = "github:mikavilpas/yazi.nvim";
       flake = false;

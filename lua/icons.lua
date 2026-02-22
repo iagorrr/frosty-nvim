@@ -97,4 +97,13 @@ icons.mode = {
     TERMINAL = "",
 }
 
+icons.directions = {
+    simple = {
+        left = "󰅁",
+        right = "󰅂",
+        down = "󰅀",
+        up = "󰅃",
+    },
+}
+
 return icons
