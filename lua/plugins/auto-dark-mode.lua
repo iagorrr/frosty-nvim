@@ -3,7 +3,7 @@ local ui = require "settings.ui"
 
 local function config()
     local opts = {
-        update_interval = 5000,
+        update_interval = 1000,
         set_dark_mode = function()
             vim.notify("auto-dark-mode: Using to dark mode " .. ui.darkColorscheme)
             vim.cmd.colorscheme(ui.darkColorscheme)
