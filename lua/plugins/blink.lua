@@ -9,6 +9,11 @@ local default_opts = {
     },
 
     completion = {
+        documentation = {
+            auto_show = false,
+            border = ui.border,
+        },
+
         menu = {
             draw = {
                 columns = {
@@ -31,7 +36,7 @@ local default_opts = {
     cmdline = {
         completion = {
             menu = {
-                auto_show = true,
+                auto_show = false,
 
                 draw = {
                     columns = {

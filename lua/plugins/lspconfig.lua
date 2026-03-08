@@ -11,7 +11,7 @@ local default_opts = {
         signs = { text = require("icons").diagnostics },
     },
 
-    inlay_hints = true,
+    inlay_hints = false,
     codelens = true,
 }
 
