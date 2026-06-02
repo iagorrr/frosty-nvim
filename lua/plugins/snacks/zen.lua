@@ -17,7 +17,8 @@ return {
         show = {
             statusline = false,
         },
-        win = { style = "zen" },
+
+        win = { style = "zen", wo = { winbar = "" } },
 
         zoom = {
             show = {
