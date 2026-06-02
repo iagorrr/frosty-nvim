@@ -1,3 +1,11 @@
+vim.api.nvim_create_autocmd("VimEnter", {
+    callback = function()
+        if pcall(require, "snacks") then
+            Snacks.zen()
+        end
+    end,
+})
+
 return {
     opts = {
         toggles = {
