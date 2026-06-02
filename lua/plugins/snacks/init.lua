@@ -60,6 +60,7 @@ local keys = {
         { "<leader>bo", function() Snacks.bufdelete.other() end, desc = "Delete other buffers" },
 
         { "<leader>fp", function() Snacks.picker.pickers() end, desc = "Pickers" },
+        { "<leader>fl", function() picker.switch_layout() end, desc = "Picker layout" },
         { "<leader>ff", function() Snacks.picker.files() end, desc = "Files" },
         { "<leader>fg", function() Snacks.picker.grep() end, desc = "Grep" },
         { "<leader>fh", function() Snacks.picker.help() end, desc = "Help" },
