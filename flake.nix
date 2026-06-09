@@ -61,6 +61,7 @@
         lazygit
 
         clang-tools
+        gcc
         cmake-language-server
 
         # Golang
