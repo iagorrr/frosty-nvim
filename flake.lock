@@ -162,6 +162,22 @@
         "type": "github"
       }
     },
+    "gitlinker.nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1675414954,
+        "narHash": "sha256-zrHvJSROjrDC5XtepOwuDrzrJG2jpnF5NJ05Iwd6DwA=",
+        "owner": "ruifm",
+        "repo": "gitlinker.nvim",
+        "rev": "cc59f732f3d043b626c8702cb725c82e54d35c25",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ruifm",
+        "repo": "gitlinker.nvim",
+        "type": "github"
+      }
+    },
     "gitsigns.nvim": {
       "flake": false,
       "locked": {
@@ -526,6 +542,7 @@
         "dropbar.nvim": "dropbar.nvim",
         "flake-utils": "flake-utils",
         "friendly-snippets": "friendly-snippets",
+        "gitlinker.nvim": "gitlinker.nvim",
         "gitsigns.nvim": "gitsigns.nvim",
         "guess-indent.nvim": "guess-indent.nvim",
         "lazy.nvim": "lazy.nvim",

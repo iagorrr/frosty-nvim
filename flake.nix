@@ -268,6 +268,10 @@
       url = "github:mikavilpas/yazi.nvim";
       flake = false;
     };
+    "gitlinker.nvim" = {
+      url = "github:ruifm/gitlinker.nvim";
+      flake = false;
+    };
   };
   # PLUGINS END
 }
