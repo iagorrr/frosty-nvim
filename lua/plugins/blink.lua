@@ -68,18 +68,13 @@ local default_opts = {
         ["<up>"] = { "select_prev", "fallback" },
         ["<down>"] = { "select_next", "fallback" },
 
-        ["<c-n>"] = {
-            function(cmp)
-                if cmp.snippet_active() then
-                    return cmp.accept()
-                else
-                    return cmp.select_next()
-                end
-            end,
-            "snippet_forward",
-            "fallback",
-        },
+        -- Menu navigation wins while the menu is open, otherwise jump between snippet placeholders
+        ["<c-n>"] = { "select_next", "snippet_forward", "fallback" },
         ["<c-p>"] = { "select_prev", "snippet_backward", "fallback" },
+
+        -- Always jump, even with the menu open
+        ["<tab>"] = { "snippet_forward", "fallback" },
+        ["<s-tab>"] = { "snippet_backward", "fallback" },
     },
 
     fuzzy = {
