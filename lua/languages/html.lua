@@ -1,12 +1,18 @@
 local lsp = {}
 
+-- Emmet abbreviations, also expanded inside jsx/tsx
+local emmet = {}
+
+local formatter = { "prettier" }
+
 return {
     {
         "neovim/nvim-lspconfig",
         optional = true,
         opts = {
             servers = {
-                biome = lsp,
+                html = lsp,
+                emmet_language_server = emmet,
             },
         },
     },
@@ -15,10 +21,8 @@ return {
         "stevearc/conform.nvim",
         optional = true,
         opts = {
-            formatters = {
-                -- Without a biome config there is nothing to honour, let the
-                -- next formatter of the chain take over instead
-                biome = { require_cwd = true },
+            formatters_by_ft = {
+                html = formatter,
             },
         },
     },

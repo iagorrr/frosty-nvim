@@ -15,6 +15,57 @@ local default_opts = {
     codelens = true,
 }
 
+-- Hover docs often end with a documentation link, like the `[MDN Reference](...)`
+-- typescript appends to web api entries. The markdown rendering hides the url
+-- behind the link text, so grab it from the raw response instead
+local function documentation_link(contents)
+    local text
+
+    if type(contents) == "string" then
+        text = contents
+    elseif contents.value then
+        text = contents.value
+    else
+        local parts = {}
+
+        for _, part in ipairs(contents) do
+            table.insert(parts, type(part) == "string" and part or part.value)
+        end
+
+        text = table.concat(parts, "\n")
+    end
+
+    return text:match "%[[^%]]*%]%((%S-)%)" or text:match "https?://%S+"
+end
+
+local function open_documentation_link()
+    local clients = vim.lsp.get_clients { bufnr = 0, method = "textDocument/hover" }
+
+    if #clients == 0 then
+        vim.notify("No language server to ask for documentation", vim.log.levels.WARN)
+        return
+    end
+
+    local pending = #clients
+
+    for _, client in ipairs(clients) do
+        local params = vim.lsp.util.make_position_params(0, client.offset_encoding)
+
+        client:request("textDocument/hover", params, function(_, result)
+            pending = pending - 1
+
+            local url = result and result.contents and documentation_link(result.contents)
+
+            if url then
+                pending = 0
+                vim.ui.open(url)
+            elseif pending == 0 then
+                vim.notify("No documentation link under the cursor", vim.log.levels.WARN)
+            end
+        end, 0)
+    end
+end
+
 local function config(_, opts)
     -- ad-hoc setting, to recognize avro as json
     vim.filetype.add {
@@ -91,6 +142,7 @@ return {
     lazy = false,
     keys = {
         { "<leader>lh", vim.lsp.buf.hover, desc = "Hover" },
+        { "<leader>lo", open_documentation_link, desc = "Open documentation link" },
         { "<leader>ls", vim.lsp.buf.signature_help, desc = "Signature help" },
         { "<leader>ld", vim.diagnostic.open_float, desc = "Diagnostics" },
         { "<leader>lr", vim.lsp.buf.rename, desc = "Rename reference" },

@@ -64,6 +64,13 @@
         gcc
         cmake-language-server
 
+        # Web
+        vtsls
+        vscode-langservers-extracted
+        tailwindcss-language-server
+        emmet-language-server
+        prettier
+
         # Golang
         go
         go-tools
@@ -71,9 +78,11 @@
         gopls
       ];
 
+      # Joining the whole derivations instead of just their `bin` keeps relative
+      # symlinks (`bin/vtsls -> ../lib/...`) resolvable
       runtimeDepsPath = pkgs.symlinkJoin {
         name = "frosty-runtime-dependencies";
-        paths = map (drv: "${drv}/bin") runtimeDeps;
+        paths = runtimeDeps;
       };
 
       includeBlinkLib = true;
@@ -110,7 +119,7 @@
           '';
         }))
         .overrideAttrs (old: {
-          generatedWrapperArgs = old.generatedWrapperArgs or [] ++ ["--prefix" "PATH" ":" runtimeDepsPath];
+          generatedWrapperArgs = old.generatedWrapperArgs or [] ++ ["--prefix" "PATH" ":" "${runtimeDepsPath}/bin"];
         });
     in {
       packages = {

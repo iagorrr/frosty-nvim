@@ -33,15 +33,22 @@ These are the defaults, the config can be tweaked to add further support as need
 Syntax highlighting and Treesitter based functionality for 300+ languages are provided via parsers from [nixpkgs](https://search.nixos.org/packages?channel=unstable&query=vimPlugins.nvim-treesitter-parsers).
 Additionally, further support is provided for the following languages:
 
-| Language | Language Server                                             | Formatter                                             |
-| -------- | ----------------------------------------------------------- | ----------------------------------------------------- |
-| Lua      | [luals](https://github.com/LuaLS/lua-language-server)       | [stylua](https://github.com/JohnnyMorganz/StyLua)     |
-| Nix      | [nil](https://github.com/oxalica/nil)                       | [alejandra](https://github.com/kamadorueda/alejandra) |
-| Python   | [basedpyright](https://github.com/detachhead/basedpyright)   | [ruff](https://github.com/astral-sh/ruff)             |
-| Rust     | [rust-analyzer](https://github.com/rust-lang/rust-analyzer) | [rustfmt](https://github.com/rust-lang/rustfmt)       |
-| Shell    | [bashls](https://github.com/bash-lsp/bash-language-server)  | [shfmt](https://github.com/mvdan/sh)                  |
+| Language                | Language Server                                                                                                                           | Formatter                                                      |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Lua                     | [luals](https://github.com/LuaLS/lua-language-server)                                                                                     | [stylua](https://github.com/JohnnyMorganz/StyLua)              |
+| Nix                     | [nil](https://github.com/oxalica/nil)                                                                                                     | [alejandra](https://github.com/kamadorueda/alejandra)          |
+| Python                  | [basedpyright](https://github.com/detachhead/basedpyright)                                                                                | [ruff](https://github.com/astral-sh/ruff)                      |
+| Rust                    | [rust-analyzer](https://github.com/rust-lang/rust-analyzer)                                                                               | [rustfmt](https://github.com/rust-lang/rustfmt)                |
+| Shell                   | [bashls](https://github.com/bash-lsp/bash-language-server)                                                                                | [shfmt](https://github.com/mvdan/sh)                           |
+| JavaScript / TypeScript | [vtsls](https://github.com/yioneko/vtsls), [eslint](https://github.com/Microsoft/vscode-eslint)                                           | [biome](https://biomejs.dev) / [prettier](https://prettier.io) |
+| HTML                    | [html](https://github.com/hrsh7th/vscode-langservers-extracted), [emmet](https://github.com/olrtg/emmet-language-server)                  | [prettier](https://prettier.io)                                |
+| CSS                     | [cssls](https://github.com/hrsh7th/vscode-langservers-extracted), [tailwindcss](https://github.com/tailwindlabs/tailwindcss-intellisense) | [biome](https://biomejs.dev) / [prettier](https://prettier.io) |
+| JSON                    | [jsonls](https://github.com/hrsh7th/vscode-langservers-extracted)                                                                         | [biome](https://biomejs.dev) / [prettier](https://prettier.io) |
 
 \+ Languages supported by the [Biome toolchain](https://biomejs.dev/internals/language-support/)
+
+Servers like `biome`, `eslint` and `tailwindcss` only attach to projects holding their respective config file.
+The same goes for formatting: `biome` runs on projects configured for it, and `prettier` takes over everywhere else.
 
 ## Customising the Nix package
 
