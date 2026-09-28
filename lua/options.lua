@@ -26,6 +26,8 @@ opt.splitright = true
 opt.tabstop = 4
 opt.termguicolors = true
 opt.timeoutlen = 100
+-- Default border for floating windows (LSP hover, diagnostics, ...)
+opt.winborder = require("settings.ui").border
 -- Set to zero to prevent swapping lines when pressing esc + (hjkl)
 opt.ttimeoutlen = 0
 

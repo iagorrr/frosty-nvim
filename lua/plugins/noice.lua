@@ -33,6 +33,24 @@ local function config()
                     height = "auto",
                 },
             },
+            hover = {
+                size = {
+                    max_width = 80,
+                    max_height = 20,
+                },
+                position = {
+                    row = 1,
+                    col = 0,
+                },
+                border = {
+                    style = ui.border,
+                    padding = { 0, 1 },
+                },
+                win_options = {
+                    wrap = true,
+                    winhighlight = "NormalFloat:NormalFloat,FloatBorder:FloatBorder",
+                },
+            },
             popupmenu = {
                 relative = "editor",
                 position = {

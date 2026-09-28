@@ -11,7 +11,7 @@ local default_opts = {
     completion = {
         documentation = {
             auto_show = false,
-            border = ui.border,
+            window = { border = ui.border },
         },
 
         menu = {
