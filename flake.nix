@@ -64,6 +64,9 @@
         gcc
         cmake-language-server
 
+        # For Makefile LSP
+        autotools-language-server
+
         # Web
         vtsls
         vscode-langservers-extracted
