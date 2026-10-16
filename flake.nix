@@ -284,6 +284,10 @@
       url = "github:ruifm/gitlinker.nvim";
       flake = false;
     };
+    "nvim-java" = {
+      url = "github:nvim-java/nvim-java";
+      flake = false;
+    };
   };
   # PLUGINS END
 }
