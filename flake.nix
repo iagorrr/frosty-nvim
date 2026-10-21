@@ -79,6 +79,9 @@
         go-tools
         gomodifytags
         gopls
+
+        # Java (nvim-java downloads jdtls and its extensions as zips)
+        unzip
       ];
 
       # Joining the whole derivations instead of just their `bin` keeps relative
@@ -286,6 +289,10 @@
     };
     "nvim-java" = {
       url = "github:nvim-java/nvim-java";
+      flake = false;
+    };
+    "nvim-dap" = {
+      url = "github:mfussenegger/nvim-dap";
       flake = false;
     };
   };

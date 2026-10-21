@@ -370,6 +370,22 @@
         "type": "github"
       }
     },
+    "nvim-dap": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1789133830,
+        "narHash": "sha256-9T6EL8mZ1rddDXBNvkh68jQSKK1bhi73IvyD6v464x8=",
+        "owner": "mfussenegger",
+        "repo": "nvim-dap",
+        "rev": "cfa2d58f4537aca6ca83e2de1a0d9f1491121264",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mfussenegger",
+        "repo": "nvim-dap",
+        "type": "github"
+      }
+    },
     "nvim-highlight-colors": {
       "flake": false,
       "locked": {
@@ -571,6 +587,7 @@
         "noice.nvim": "noice.nvim",
         "nui.nvim": "nui.nvim",
         "nvim-autopairs": "nvim-autopairs",
+        "nvim-dap": "nvim-dap",
         "nvim-highlight-colors": "nvim-highlight-colors",
         "nvim-java": "nvim-java",
         "nvim-lightbulb": "nvim-lightbulb",
