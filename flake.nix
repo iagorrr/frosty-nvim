@@ -25,7 +25,7 @@
 
       allTreesitterParsers = pkgs.linkFarm "frosty-treesitter-parsers" (
         map (drv: {
-          name = "parser/${lib.removeSuffix "-grammar" (lib.strings.getName drv.name)}.so";
+          name = "parser/${lib.removePrefix "tree-sitter-" (lib.removeSuffix "-grammar" (lib.strings.getName drv.name))}.so";
           path = "${drv.outPath}/parser";
         })
         pkgs.vimPlugins.nvim-treesitter.allGrammars
