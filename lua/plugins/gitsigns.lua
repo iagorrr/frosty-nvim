@@ -10,14 +10,14 @@ for name, sign in pairs(require("icons").git_gutter) do
     default_opts.signs[name] = { text = sign }
 end
 
--- Config function defined in `plugins/snacks.lua`
+-- Config function defined in `plugins/snacks/init.lua`
 return {
     "lewis6991/gitsigns.nvim",
 
     lazy = false,
     keys = {
-        { "<leader>gs", "<cmd>Gitsigns stage_hunk<cr>", desc = "Stage hunk" },
-        { "<leader>gu", "<cmd>Gitsigns undo_stage_hunk<cr>", desc = "Unstage hunk" },
+        { "<leader>gs", "<cmd>Gitsigns stage_hunk<cr>", mode = { "n" }, desc = "Stage hunk" },
+        { "<leader>gs", ":Gitsigns stage_hunk<cr>", mode = "v", desc = "Stage selected hunk lines" },
         { "<leader>gx", "<cmd>Gitsigns reset_hunk<cr>", desc = "Discard hunk" },
         { "<leader>gp", "<cmd>Gitsigns preview_hunk_inline<cr>", desc = "Preview hunk" },
 
