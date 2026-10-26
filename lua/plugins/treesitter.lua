@@ -1,48 +1,52 @@
 -- TODO: Lazy load treesitter
 -- TODO: Add more treesitter textobjects
 
+-- Flake bundles parsers using `treesitterParsers` and queries through `FROSTY_RUNTIMEPATHS`
 local default_opts = {
-    -- Flake bundles parsers using `treesitterParsers`
-    ensure_installed = {},
-    auto_install = false,
-
-    highlight = {
-        enable = true,
-        additional_vim_regex_highlighting = false,
-    },
-
-    indent = { enable = true },
-
-    incremental_selection = {
-        enable = true,
-
-        keymaps = {
-            init_selection = "<c-space>",
-            node_incremental = "<c-space>",
-            scope_incremental = "<c-s-space>",
-            node_decremental = "<bs>",
+    textobjects = {
+        select = {
+            lookahead = true,
         },
     },
 
-    textobjects = {
+    textobject_keymaps = {
         select = {
-            enable = true,
-
-            keymaps = {
-                ["af"] = { query = "@function.outer", desc = "function" },
-                ["if"] = { query = "@function.inner", desc = "inner function" },
-                ["ac"] = { query = "@class.outer", desc = "class" },
-                ["ic"] = { query = "@class.inner", desc = "inner class" },
-            },
+            ["af"] = { query = "@function.outer", desc = "function" },
+            ["if"] = { query = "@function.inner", desc = "inner function" },
+            ["ac"] = { query = "@class.outer", desc = "class" },
+            ["ic"] = { query = "@class.inner", desc = "inner class" },
         },
     },
 }
 
 local function config(_, opts)
-    vim.o.foldmethod = "expr"
-    vim.o.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+    vim.api.nvim_create_autocmd("FileType", {
+        group = vim.api.nvim_create_augroup("frosty_treesitter", { clear = true }),
+        callback = function(args)
+            if not pcall(vim.treesitter.start, args.buf) then
+                return
+            end
 
-    require("nvim-treesitter.configs").setup(opts)
+            vim.wo[0][0].foldmethod = "expr"
+            vim.wo[0][0].foldexpr = "v:lua.vim.treesitter.foldexpr()"
+            vim.bo[args.buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+        end,
+    })
+
+    -- Incremental selection is built into Neovim 0.12 as `an` and `in`
+    vim.keymap.set("n", "<c-space>", "van", { remap = true, desc = "Start node selection" })
+    vim.keymap.set("x", "<c-space>", "an", { remap = true, desc = "Expand node selection" })
+    vim.keymap.set("x", "<bs>", "in", { remap = true, desc = "Shrink node selection" })
+
+    require("nvim-treesitter-textobjects").setup(opts.textobjects)
+
+    local select = require "nvim-treesitter-textobjects.select"
+
+    for lhs, textobject in pairs(opts.textobject_keymaps.select) do
+        vim.keymap.set({ "x", "o" }, lhs, function()
+            select.select_textobject(textobject.query, "textobjects")
+        end, { desc = textobject.desc })
+    end
 end
 
 return {

@@ -34,7 +34,8 @@
       luaDeps = ps: [];
 
       # Include packages from `pkgs.vimPlugins.nvim-treesitter.grammarPlugins` if you want only specific parsers
-      treesitterParsers = [allTreesitterParsers];
+      # nvim-treesitter keeps its queries under `runtime/` instead of the plugin root
+      treesitterParsers = [allTreesitterParsers "${inputs.nvim-treesitter}/runtime"];
 
       runtimeDeps = with pkgs; [
         #wl-clipboard # Replace with `xclip` for X11 support
